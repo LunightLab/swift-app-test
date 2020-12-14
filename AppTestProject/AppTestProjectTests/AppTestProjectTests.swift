@@ -16,6 +16,7 @@ class AppTestProjectTests: XCTestCase {
     ///  여기에 설정 코드를 입력하세요. 이 메서드는 클래스의 각 테스트 메서드를 호출하기 전에 호출됩니다.
     /// - Throws: -
     override func setUpWithError() throws {
+        TRACE_LOG()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
@@ -24,6 +25,7 @@ class AppTestProjectTests: XCTestCase {
     /// 여기에 분해 코드를 넣으십시오. 이 메서드는 클래스의 각 테스트 메서드를 호출 한 후에 호출됩니다.
     /// - Throws: -
     override func tearDownWithError() throws {
+        TRACE_LOG()
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
@@ -31,6 +33,7 @@ class AppTestProjectTests: XCTestCase {
     ///  XCTAssert 및 관련 함수를 사용하여 테스트가 올바른 결과를 생성하는지 확인합니다.
     /// - Throws: -
     func testExample() throws {
+        TRACE_LOG()
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
