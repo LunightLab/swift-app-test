@@ -10,6 +10,7 @@
 		13108F092586EC00003BFFD5 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13108F082586EC00003BFFD5 /* Color.xcassets */; };
 		13108F332586F409003BFFD5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13108F322586F409003BFFD5 /* Extensions.swift */; };
 		13108F532586F93F003BFFD5 /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13108F522586F93F003BFFD5 /* Assets+Generated.swift */; };
+		13108F6A25871DEB003BFFD5 /* TraceLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13108F6925871DEB003BFFD5 /* TraceLog.swift */; };
 		137B905A258334BC00300DC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B9059258334BC00300DC5 /* AppDelegate.swift */; };
 		137B905C258334BC00300DC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B905B258334BC00300DC5 /* SceneDelegate.swift */; };
 		137B905E258334BC00300DC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B905D258334BC00300DC5 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		13108F082586EC00003BFFD5 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		13108F322586F409003BFFD5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		13108F522586F93F003BFFD5 /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
+		13108F6925871DEB003BFFD5 /* TraceLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceLog.swift; sourceTree = "<group>"; };
 		137B9056258334BC00300DC5 /* AppTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		137B9059258334BC00300DC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		137B905B258334BC00300DC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		13108F6825871DDB003BFFD5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				13108F6925871DEB003BFFD5 /* TraceLog.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		137B904D258334BC00300DC5 = {
 			isa = PBXGroup;
 			children = (
@@ -134,11 +144,12 @@
 		137B9058258334BC00300DC5 /* AppTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				13108F042586EBBD003BFFD5 /* Resource */,
 				137B9059258334BC00300DC5 /* AppDelegate.swift */,
+				13108F6825871DDB003BFFD5 /* Utils */,
 				137B905B258334BC00300DC5 /* SceneDelegate.swift */,
 				137B905D258334BC00300DC5 /* ViewController.swift */,
 				13108F322586F409003BFFD5 /* Extensions.swift */,
-				13108F042586EBBD003BFFD5 /* Resource */,
 				137B90892583452500300DC5 /* Year.swift */,
 				137B905F258334BC00300DC5 /* Main.storyboard */,
 				137B9064258334BD00300DC5 /* LaunchScreen.storyboard */,
@@ -185,7 +196,6 @@
 				6D87316BB4D86903CB4E3A15 /* Pods-AppTestProjectTests.debug.xcconfig */,
 				A5391159E321CCEEC0D162CC /* Pods-AppTestProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -411,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13108F6A25871DEB003BFFD5 /* TraceLog.swift in Sources */,
 				13108F332586F409003BFFD5 /* Extensions.swift in Sources */,
 				137B905E258334BC00300DC5 /* ViewController.swift in Sources */,
 				13108F532586F93F003BFFD5 /* Assets+Generated.swift in Sources */,
