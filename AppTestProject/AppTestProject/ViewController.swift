@@ -20,10 +20,10 @@ class ViewController: UIViewController {
         if #available(iOS 13.0, *) {
             if UITraitCollection.current.userInterfaceStyle == .dark {
                 // system mode : dark
-                print("system mode : dark")
+                print("system display mode : dark")
             }else{
                 // system mode : light
-                print("system mode : light")
+                print("system display mode : light")
             }
         }else{
             // iOS 13 버전 미만

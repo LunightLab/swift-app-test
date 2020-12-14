@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		13108F332586F409003BFFD5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13108F322586F409003BFFD5 /* Extensions.swift */; };
 		13108F532586F93F003BFFD5 /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13108F522586F93F003BFFD5 /* Assets+Generated.swift */; };
 		13108F6A25871DEB003BFFD5 /* TraceLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13108F6925871DEB003BFFD5 /* TraceLog.swift */; };
+		13108FC42587507E003BFFD5 /* lottie-developer.json in Resources */ = {isa = PBXBuildFile; fileRef = 13108FC32587507E003BFFD5 /* lottie-developer.json */; };
 		137B905A258334BC00300DC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B9059258334BC00300DC5 /* AppDelegate.swift */; };
 		137B905C258334BC00300DC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B905B258334BC00300DC5 /* SceneDelegate.swift */; };
 		137B905E258334BC00300DC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B905D258334BC00300DC5 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 		13108F322586F409003BFFD5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		13108F522586F93F003BFFD5 /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
 		13108F6925871DEB003BFFD5 /* TraceLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceLog.swift; sourceTree = "<group>"; };
+		13108FC32587507E003BFFD5 /* lottie-developer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-developer.json"; sourceTree = "<group>"; };
 		137B9056258334BC00300DC5 /* AppTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		137B9059258334BC00300DC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		137B905B258334BC00300DC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		13108F042586EBBD003BFFD5 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				13108FC22587506A003BFFD5 /* Images */,
 				13108F522586F93F003BFFD5 /* Assets+Generated.swift */,
 				137B9062258334BD00300DC5 /* Assets.xcassets */,
 				13108F082586EC00003BFFD5 /* Color.xcassets */,
@@ -117,6 +120,14 @@
 				13108F6925871DEB003BFFD5 /* TraceLog.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		13108FC22587506A003BFFD5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				13108FC32587507E003BFFD5 /* lottie-developer.json */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		137B904D258334BC00300DC5 = {
@@ -211,6 +222,7 @@
 				137B9053258334BC00300DC5 /* Frameworks */,
 				137B9054258334BC00300DC5 /* Resources */,
 				13108F222586F2F6003BFFD5 /* ShellScript */,
+				4A4F5C048EAEE367EF6C9AB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +260,7 @@
 				137B9073258334BD00300DC5 /* Sources */,
 				137B9074258334BD00300DC5 /* Frameworks */,
 				137B9075258334BD00300DC5 /* Resources */,
+				44805A85CEAB3B8D19C145DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +324,7 @@
 				13108F092586EC00003BFFD5 /* Color.xcassets in Resources */,
 				137B9063258334BD00300DC5 /* Assets.xcassets in Resources */,
 				137B9061258334BC00300DC5 /* Main.storyboard in Resources */,
+				13108FC42587507E003BFFD5 /* lottie-developer.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +361,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# Swift Gen(Color.xcassets)\nswiftgen xcassets ${TARGETNAME}/Resource/Color.xcassets -t swift4 --output \"${TARGETNAME}/Resource/Assets+Generated.swift\"\n\n";
+		};
+		44805A85CEAB3B8D19C145DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppTestProject-AppTestProjectUITests/Pods-AppTestProject-AppTestProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppTestProject-AppTestProjectUITests/Pods-AppTestProject-AppTestProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppTestProject-AppTestProjectUITests/Pods-AppTestProject-AppTestProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A4F5C048EAEE367EF6C9AB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppTestProject/Pods-AppTestProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppTestProject/Pods-AppTestProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppTestProject/Pods-AppTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		5C2B01C03A8BA59176147185 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
