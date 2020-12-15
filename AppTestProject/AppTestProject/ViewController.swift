@@ -11,6 +11,7 @@ import Lottie
 class ViewController: UIViewController {
 
     @IBOutlet var btnDarkmodeTest: UIButton!
+    @IBOutlet weak var btnShared: UIButton!
     
     override func viewDidLoad() {
 
@@ -42,6 +43,31 @@ class ViewController: UIViewController {
         
 //        view.backgroundColor = UIColor.systemBackground // ios12이하에서 지원하지 못해 extension 추가.
 //        view.backgroundColor = AssetColor.systemBackground // Extension 참고.
+    }
+    
+    
+    // 외부 공유하기
+    // url : https://www.swiftdevcenter.com/uiactivityviewcontroller-tutorial-by-example/
+    @IBAction func doShare(_ sender: Any){
+        let shareText: String = "share text string"
+        var shareObject = [Any]()
+        shareObject.append(shareText)
+        let activityViewController = UIActivityViewController(activityItems: shareObject, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        self.present(activityViewController, animated: true, completion: nil)
+        //Completion handler
+        activityViewController.completionWithItemsHandler = { (activityType: UIActivity.ActivityType?, completed:
+        Bool, arrayReturnedItems: [Any]?, error: Error?) in
+            if completed {
+                print("share completed")
+                return
+            } else {
+                print("cancel")
+            }
+            if let shareError = error {
+                print("error while sharing: \(shareError.localizedDescription)")
+            }
+        }
     }
 
 

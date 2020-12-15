@@ -58,8 +58,8 @@ class LaunchSplashView: UIViewController {
     ///   - font: uifont style
     func showToast(message: String, font: UIFont = UIFont.systemFont(ofSize: 14.0)) {
         let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 75, y: self.view.frame.size.height-100, width: 150, height: 35))
-        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
-        toastLabel.textColor = Asset.toasetBG.color
+        toastLabel.backgroundColor = Asset.toastBG.color
+        toastLabel.textColor = Asset.toastText.color
         toastLabel.font = font
         toastLabel.textAlignment = .center
         toastLabel.text = message
