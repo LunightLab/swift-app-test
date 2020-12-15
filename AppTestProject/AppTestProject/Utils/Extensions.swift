@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-//typealias AssetColor = Asset
-//
-//extension AssetColor {
-//    static var systemBacground: UIColor{
-//        if #available(iOS 13 , *) {
-//            return .systemBackground
-//        }
-//        return UIColor(displayP3Red: 222, green: 111, blue: 333, alpha: 1.0)
-//    }
-//}
+typealias AssetColor = Asset
+
+extension AssetColor {
+    static var systemBacground: UIColor{
+        if #available(iOS 13 , *) {
+            return .systemBackground
+        }
+        return UIColor(displayP3Red: 222, green: 111, blue: 333, alpha: 1.0)
+    }
+}

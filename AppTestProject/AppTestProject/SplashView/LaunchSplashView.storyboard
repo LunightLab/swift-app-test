@@ -35,6 +35,9 @@
                             <constraint firstItem="a30-cy-C5j" firstAttribute="centerX" secondItem="nSE-qL-v8g" secondAttribute="centerX" id="wUA-PH-p2s"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labViewDescript" destination="a30-cy-C5j" id="jTo-pY-7mS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4T1-6y-2ei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,18 +8,22 @@
 
 import UIKit
 import Lottie
+
 class LaunchSplashView: UIViewController {
     
     private var animationView: AnimationView?
+    @IBOutlet var labViewDescript: UILabel!
     
     override func viewDidLoad() {
         TRACE_LOG()
+        
         super.viewDidLoad()
         
+        labViewDescript.textColor = Asset.defaultFont.color
         animationView = .init(name: "lottie-developer")
         animationView!.frame = view.bounds
         animationView!.contentMode = .scaleAspectFit
-        animationView!.animationSpeed = 2.0
+        animationView!.animationSpeed = 1.0
         view.addSubview(animationView!)
 
         animationView!.play(fromProgress: 0,
@@ -32,6 +36,7 @@ class LaunchSplashView: UIViewController {
                               print("Animation cancelled")
                             }
         })
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
