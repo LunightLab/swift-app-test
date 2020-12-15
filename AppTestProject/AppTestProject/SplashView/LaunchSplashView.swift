@@ -51,7 +51,7 @@ class LaunchSplashView: UIViewController {
         present(firstVC, animated: true, completion:  nil)
     }
     
-    
+     
     /// Custom Toast Message
     /// - Parameters:
     ///   - message: message string
