@@ -11,29 +11,10 @@ import Lottie
 class ViewController: UIViewController {
 
     @IBOutlet var btnDarkmodeTest: UIButton!
-    private var animationView: AnimationView?
     
     override func viewDidLoad() {
 
         super.viewDidLoad()
-    
-        animationView = .init(name: "lottie-developer")
-        animationView?.frame = view.bounds
-        animationView!.contentMode = .scaleAspectFit
-        animationView!.animationSpeed = 2.0
-        view.addSubview(animationView!)
-
-        animationView!.play(fromProgress: 0,
-                           toProgress: 1,
-                           loopMode: LottieLoopMode.playOnce,
-                           completion: { (finished) in
-                            if finished {
-//                                self.nextViewHandler()
-                                print("Animation finished")
-                            } else {
-                              print("Animation cancelled")
-                            }
-        })
         
         // Color.xcassets 지원버전 iOS 11.0
         if #available(iOS 13.0, *) {
