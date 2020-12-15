@@ -19,3 +19,4 @@ extension AssetColor {
         return UIColor(displayP3Red: 222, green: 111, blue: 333, alpha: 1.0)
     }
 }
+

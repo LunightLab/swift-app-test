@@ -36,6 +36,7 @@ class LaunchSplashView: UIViewController {
                               print("Animation cancelled")
                             }
         })
+        self.showToast(message: "test toast message")
         
     }
     
@@ -48,6 +49,29 @@ class LaunchSplashView: UIViewController {
         let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController")
         firstVC.modalPresentationStyle = .fullScreen
         present(firstVC, animated: true, completion:  nil)
+    }
+    
+    
+    /// Custom Toast Message
+    /// - Parameters:
+    ///   - message: message string
+    ///   - font: uifont style
+    func showToast(message: String, font: UIFont = UIFont.systemFont(ofSize: 14.0)) {
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 75, y: self.view.frame.size.height-100, width: 150, height: 35))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = Asset.toasetBG.color
+        toastLabel.font = font
+        toastLabel.textAlignment = .center
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10
+        toastLabel.clipsToBounds = true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 4.0, delay: 0.1, options: .curveEaseOut, animations: {
+                        toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
     }
     
 }
