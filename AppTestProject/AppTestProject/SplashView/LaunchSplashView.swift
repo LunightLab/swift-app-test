@@ -46,7 +46,7 @@ class LaunchSplashView: UIViewController {
     
     func nextViewHandler() {
         TRACE_LOG()
-        let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController")
+        let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController")
         firstVC.modalPresentationStyle = .fullScreen
         present(firstVC, animated: true, completion:  nil)
     }

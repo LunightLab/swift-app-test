@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  AppTestProject
 //
 //  Created by Kyung Shik Kim on 2020/12/11.
@@ -8,7 +8,7 @@
 
 import UIKit
 import Lottie
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     @IBOutlet var btnDarkmodeTest: UIButton!
     @IBOutlet weak var btnShared: UIButton!
