@@ -26,6 +26,8 @@
 		13938ABA258898DE000E2A3B /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13938AB9258898DE000E2A3B /* ToastMessage.swift */; };
 		2318E486575C4ABB3BCC1F31 /* Pods_AppTestProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C735A18B1057DD46833A403B /* Pods_AppTestProjectTests.framework */; };
 		53312F16AF662E5E6D1A1E4F /* Pods_AppTestProject_AppTestProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338B729C6DD0ABD7AD7DD5B2 /* Pods_AppTestProject_AppTestProjectUITests.framework */; };
+		B95A6E342591AD5D00AB985E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137B905F258334BC00300DC5 /* Main.storyboard */; };
+		B95A6E382591AD6000AB985E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137B905F258334BC00300DC5 /* Main.storyboard */; };
 		D1C378A25C8BB4566B28F8B6 /* Pods_AppTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658DFB979BE4F8BFB82A1784 /* Pods_AppTestProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -366,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B95A6E382591AD6000AB985E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B95A6E342591AD5D00AB985E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

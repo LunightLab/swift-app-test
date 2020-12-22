@@ -10,12 +10,19 @@ import UIKit
 import Lottie
 class MainViewController: UIViewController {
 
-    @IBOutlet var btnDarkmodeTest: UIButton!
+    @IBOutlet var submitBtn: UIButton!
     @IBOutlet weak var btnShared: UIButton!
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var inputField: UITextField!
     
     override func viewDidLoad() {
 
         super.viewDidLoad()
+        
+        self.resultLabel.accessibilityIdentifier = "result-label"
+        self.inputField.accessibilityIdentifier = "input-field"
+        self.submitBtn.accessibilityIdentifier = "submit-button"
+        self.btnShared.accessibilityIdentifier = "shareBtn"
         
         // Color.xcassets 지원버전 iOS 11.0
         if #available(iOS 13.0, *) {
@@ -39,7 +46,7 @@ class MainViewController: UIViewController {
         // brew install swift gen
         // url : https://github.com/SwiftGen/SwiftGen
         //       https://zeddios.tistory.com/1017?category=682196
-        btnDarkmodeTest.backgroundColor = Asset.customBlue.color
+        submitBtn.backgroundColor = Asset.customBlue.color
         
 //        view.backgroundColor = UIColor.systemBackground // ios12이하에서 지원하지 못해 extension 추가.
 //        view.backgroundColor = AssetColor.systemBackground // Extension 참고.
@@ -69,6 +76,10 @@ class MainViewController: UIViewController {
             }
         }
     }
+    @IBAction func actionLabel(_ sender: Any){
+        print("actionLabel")
+    }
+    
 
 
 }
