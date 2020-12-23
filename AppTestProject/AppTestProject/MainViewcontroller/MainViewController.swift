@@ -19,6 +19,7 @@ class MainViewController: UIViewController {
 
         super.viewDidLoad()
         
+        // UITest accessibilityIdentifier 설정
         self.resultLabel.accessibilityIdentifier = "result-label"
         self.inputField.accessibilityIdentifier = "input-field"
         self.submitBtn.accessibilityIdentifier = "submit-button"
@@ -50,6 +51,11 @@ class MainViewController: UIViewController {
         
 //        view.backgroundColor = UIColor.systemBackground // ios12이하에서 지원하지 못해 extension 추가.
 //        view.backgroundColor = AssetColor.systemBackground // Extension 참고.
+        
+        // device info
+        let deviceTelephoneInfo = getTelephoneInfo()
+        dump(deviceTelephoneInfo)
+        let deviceModelCode = getDeviceModelCode()
     }
     
     
