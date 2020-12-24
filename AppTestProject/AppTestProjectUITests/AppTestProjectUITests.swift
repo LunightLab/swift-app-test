@@ -8,10 +8,16 @@
 
 import XCTest
 import AppTestProject
-
+@testable import AppTestProject
 // Given : 주어진 환경
 // When : 행위
 // Then : 기대결과
+
+private extension XCUIApplication {
+//    var btnShared: XCUIElement { self.buttons["shareBtn"] }
+//    var inputField: XCUIElement { self.textFields["input-field"] }
+//    var submitBtn: XCUIElement { self.buttons["submit-button"] }
+}
 
 class AppTestProjectUITests: XCTestCase {
     
@@ -22,9 +28,7 @@ class AppTestProjectUITests: XCTestCase {
         // UI 테스트에서는 일반적으로 실패가 발생하면 즉시 중지하는 것이 가장 좋습니다.
         // 계속 실행을 원한다면 true
         continueAfterFailure = false
-
-//        app.launch() // 앱실행
-
+        XCUIApplication().launch()
         // UI 테스트에서는 테스트가 실행되기 전에 필요한 초기 상태 (예 : 인터페이스 방향)를 설정하는 것이 중요합니다. setUp 메서드는이 작업을 수행하기에 좋은 장소입니다.
         
     }
@@ -35,16 +39,12 @@ class AppTestProjectUITests: XCTestCase {
     }
 
     func testExample() throws {
-        // UI 테스트는 테스트하는 애플리케이션을 시작해야합니다.
         
-        // test를 위한 UIApplication
-        // XCUIApplication : 앱을 실행 및 종료할 수 있는 앱의 "프록시"
-        let app = XCUIApplication()
-        app.launch()
 
+//        sleep(10)
         // 레코딩을 사용하여 UI 테스트 작성을 시작하십시오.
         // XCTAssert 및 관련 함수를 사용하여 테스트가 올바른 결과를 생성하는지 확인합니다.
-        print("testExample")
+//        print("testExample")
     }
 
     func testLaunchPerformance() throws {
@@ -57,6 +57,18 @@ class AppTestProjectUITests: XCTestCase {
     }
     
     func test_UIRecording_Tutorial() {
+        
+        
+        let app = XCUIApplication()
+        
+        app.textFields["input-field"].tap()
+        let testField = app.textFields["input-field"]
+        testField.tap()
+        testField.typeText("kimkshahaha@gmail.com")
+//        let shareBtn = app.buttons[]
+        
+        app/*@START_MENU_TOKEN@*/.buttons["shareBtn"]/*[[".buttons[\"share\"]",".buttons[\"shareBtn\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app/*@START_MENU_TOKEN@*/.navigationBars["UIActivityContentView"]/*[[".otherElements[\"ActivityListView\"].navigationBars[\"UIActivityContentView\"]",".navigationBars[\"UIActivityContentView\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.buttons["Close"].tap()
         
     }
 }
