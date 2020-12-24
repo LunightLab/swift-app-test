@@ -13,19 +13,19 @@
     <img src="images/readme-title.png" alt="title" width="290" height="230">
   </a>
 
-  <h3 align="center">Project title</h3>
+  <h3 align="center">Swift test project</h3>
 
   <p align="center">
-    설명...
+    개발 테스트용
     <br />
-    <a href="https://github.com/github_username/repo"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LunightLab/swift-app-test"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://google.com">Commit Information</a>
     ·
-    <a href="https://google.com">Report Bug</a>
+    <a href="https://github.com/LunightLab/swift-app-test/issues">Report Bug</a>
     ·
-    <a href="https://google.com">Wiki</a>
+    <a href="https://github.com/LunightLab/swift-app-test/wiki">Wiki</a>
   </p>
 </p>
 
@@ -40,22 +40,22 @@
 - [About LuLabTemplate](#about-lulabtemplate)
 - [History](#history)
 - [License](#license)
-- [- MIT](#ullimitliul)
+- [- MIT](#--mit)
 - [Author](#author)
 
 ## About Project
-- 
+- 개인공부용 swift repository 입니다.
 ## Support Version
-- 
+- 미기록
 
 ## Installation Process
-- 
+- .
 
 ## Distribution Architecture
-- 
+- .
 
 ## Update Log
-- 
+- commit list 참고
 
 ## About LuLabTemplate
 - Lunight Lab Github Template  
@@ -64,6 +64,7 @@
 ## History
 - 2020.2.3 : 템플릿 첫작성.
 - 2020.8.8 : 템플릿 일부수정
+- 2020.12.20 : 기록.
 
 ## License
 - MIT

@@ -9,6 +9,7 @@ target 'AppTestProject' do
   pod 'SwiftGen', '~> 6.0'
   pod 'lottie-ios'
   pod 'Toaster', '~>2.2'
+  pod 'Alamofire', '~> 5.2'
   
   target 'AppTestProjectTests' do
     inherit! :search_paths

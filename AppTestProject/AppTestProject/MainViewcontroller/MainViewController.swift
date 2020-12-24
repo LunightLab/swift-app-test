@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  AppTestProject
 //
 //  Created by Kyung Shik Kim on 2020/12/11.
@@ -8,14 +8,36 @@
 
 import UIKit
 import Lottie
-class ViewController: UIViewController {
 
-    @IBOutlet var btnDarkmodeTest: UIButton!
+protocol MainViewControllerProtocol {
+    var viewModel: MainViewModel { get set }
+    func MainVCconfigure()
+}
+
+class MainViewController: UIViewController, MainViewControllerProtocol {
+
+    var viewModel = MainViewModel()
+    
+    @IBOutlet weak var labTitle: UILabel!
+    @IBOutlet weak var btnNextView: UIButton!
+    
+    @IBOutlet var submitBtn: UIButton!
     @IBOutlet weak var btnShared: UIButton!
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var inputField: UITextField!
     
     override func viewDidLoad() {
 
         super.viewDidLoad()
+        MainVCconfigure()
+    }
+    
+    func MainVCconfigure() {
+        // UITest accessibilityIdentifier 설정
+        self.resultLabel.accessibilityIdentifier = "result-label"
+        self.inputField.accessibilityIdentifier = "input-field"
+        self.submitBtn.accessibilityIdentifier = "submit-button"
+        self.btnShared.accessibilityIdentifier = "shareBtn"
         
         // Color.xcassets 지원버전 iOS 11.0
         if #available(iOS 13.0, *) {
@@ -31,6 +53,7 @@ class ViewController: UIViewController {
             // system mode : light
             print("system mode : light")
         }
+        
         // OpenSource swiftGen
         // Color.xcassets의 커스텀 색상 사용 : 코드와 인터페이스 빌더에서 모두 사용가능, 단 개발 단계에서 오류 인지가 어렵다(오타...등등)
         // SwiftGen(OpenSource)빌드단계에서 자동으로 코드로 생성(script로 swift파일로 만들어줌)
@@ -39,12 +62,28 @@ class ViewController: UIViewController {
         // brew install swift gen
         // url : https://github.com/SwiftGen/SwiftGen
         //       https://zeddios.tistory.com/1017?category=682196
-        btnDarkmodeTest.backgroundColor = Asset.customBlue.color
+        submitBtn.backgroundColor = Asset.customBlue.color
         
 //        view.backgroundColor = UIColor.systemBackground // ios12이하에서 지원하지 못해 extension 추가.
 //        view.backgroundColor = AssetColor.systemBackground // Extension 참고.
+        
+        // device info
+        let deviceTelephoneInfo = getTelephoneInfo()
+        dump(deviceTelephoneInfo)
+        let deviceModelCode = getDeviceModelCode()
+        
+        // mvvm design pattern test
+        labTitle.text = viewModel.title
+        labTitle.textColor = viewModel.titleColor
+        
+        btnNextView.layer.borderColor = viewModel.titleColor.cgColor
+        btnNextView.layer.borderWidth = 2.0
+        
+        btnNextView.setTitleColor(viewModel.titleColor, for: .normal)
+        btnNextView.setTitleColor(viewModel.titleColor, for: .highlighted)
+        btnNextView.setTitle(viewModel.btnNextViewNormalName, for: .normal)
+        btnNextView.setTitle(viewModel.btnNextViewHighlightName, for: .highlighted)
     }
-    
     
     // 외부 공유하기
     // url : https://www.swiftdevcenter.com/uiactivityviewcontroller-tutorial-by-example/
@@ -69,6 +108,20 @@ class ViewController: UIViewController {
             }
         }
     }
+    @IBAction func actionLabel(_ sender: Any){
+        print("actionLabel")
+    }
+    
+    @IBAction func showNextView(_ sender: Any) {
+        viewModel.moveHandler(){ isSuccess in
+            if isSuccess {
+                print("\(#function)::move sample second")
+                // move
+//                self.performSegue(withIdentifier: "", sender: nil)
+            }
+        }
+    }
+    
 
 
 }
