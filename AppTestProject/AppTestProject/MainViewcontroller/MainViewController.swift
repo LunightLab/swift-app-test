@@ -8,6 +8,7 @@
 
 import UIKit
 import Lottie
+import OSLog
 
 protocol MainViewControllerProtocol {
     var viewModel: MainViewModel { get set }
@@ -29,7 +30,9 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
     override func viewDidLoad() {
 
         super.viewDidLoad()
+        testOS_Log()
         MainVCconfigure()
+        
     }
     
     func MainVCconfigure() {
@@ -67,11 +70,6 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
 //        view.backgroundColor = UIColor.systemBackground // ios12이하에서 지원하지 못해 extension 추가.
 //        view.backgroundColor = AssetColor.systemBackground // Extension 참고.
         
-        // device info
-        let deviceTelephoneInfo = getTelephoneInfo()
-        dump(deviceTelephoneInfo)
-        let deviceModelCode = getDeviceModelCode()
-        
         // mvvm design pattern test
         labTitle.text = viewModel.title
         labTitle.textColor = viewModel.titleColor
@@ -86,9 +84,40 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
     }
     
     
+    func testOS_Log() {
+        // MARK: os_log & Logger(ios14이상) 테스트..
+    
+        // iOS 14이상 API 추가 Logger
+        if #available(iOS 14.0, *) {
+            Logger.viewCycle.info("viewInfomation")
+            Logger.viewCycle.debug("User debug")
+//            Logger.viewCycle.debug("User \(username, privacy: .private) logged in")
+        } else {
+            // Fallback on earlier versions
+            os_log("View did load!", log: OSLog.viewCycle, type: .info)
+            os_log("View error", log:OSLog.getData, type: .error)
+    //        os_log("User %{public}@ logged in", log: OSLog.userFlow, type: .info, username)
+    //        os_log("User %{private}@ logged in", log: OSLog.userFlow, type: .info, username)
+            
+        }
+        
+    }
+    // MARK: -
+
+    /// Device 정보 가져오기
+    func getDeviceAndUserInfo() {
+        // MARK: Device 정보 가져오기
+        let deviceTelephoneInfo = getTelephoneInfo()
+        dump(deviceTelephoneInfo)
+        let deviceModelCode = getDeviceModelCode()
+        
+    }
+    
+    
     // 외부 공유하기
     // url : https://www.swiftdevcenter.com/uiactivityviewcontroller-tutorial-by-example/
     @IBAction func doShare(_ sender: Any){
+        // MARK: 외부 공유하기
         let shareText: String = "share text string"
         var shareObject = [Any]()
         shareObject.append(shareText)
