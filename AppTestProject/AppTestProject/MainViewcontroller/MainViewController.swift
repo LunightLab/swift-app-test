@@ -85,6 +85,7 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
         btnNextView.setTitle(viewModel.btnNextViewHighlightName, for: .highlighted)
     }
     
+    
     // 외부 공유하기
     // url : https://www.swiftdevcenter.com/uiactivityviewcontroller-tutorial-by-example/
     @IBAction func doShare(_ sender: Any){
