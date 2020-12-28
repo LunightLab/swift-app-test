@@ -149,13 +149,14 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
         viewModel.moveHandler(){ isSuccess in
             if isSuccess {
                 print("\(#function)::move sample second")
-                // move
-//                self.performSegue(withIdentifier: "", sender: nil)
+                guard let webvc = self.storyboard?.instantiateViewController(withIdentifier: "TestListViewController") else {
+                    return
+                }
+                webvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+                webvc.modalPresentationStyle = .fullScreen
+                self.present(webvc, animated: true)
             }
         }
     }
-    
-
-
 }
 
