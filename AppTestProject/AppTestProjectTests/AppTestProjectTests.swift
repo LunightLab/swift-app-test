@@ -62,4 +62,19 @@ class AppTestProjectTests: XCTestCase {
         let year = Year(calenderYear: 2400)
         XCTAssertTrue(year.isLeapYear)
     }
+    
+    func testUserDefault() {
+        // MARK: mark
+        // FIXME: ????
+        // TODO: sonsole이 왜 안찍힘?
+        let rvalue = "sample"
+        UserDefaults.standard.set(rvalue, forKey: "rvaule") // save
+        UserDefaults.standard.value(forKey: "rvalue") // load
+        let userDefaults =  UserDefaults.standard
+        if let getValue = userDefaults.value(forKey: "rvalue"){
+            print("💬test : ", getValue)
+        }
+        userDefaults.removeObject(forKey: "rvalue") // remove
+        UserDefaults.standard.value(forKey: "rvalue")
+    }
 }

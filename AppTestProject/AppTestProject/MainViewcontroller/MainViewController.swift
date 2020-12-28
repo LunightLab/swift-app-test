@@ -8,8 +8,19 @@
 
 import UIKit
 import Lottie
-class MainViewController: UIViewController {
 
+protocol MainViewControllerProtocol {
+    var viewModel: MainViewModel { get set }
+    func MainVCconfigure()
+}
+
+class MainViewController: UIViewController, MainViewControllerProtocol {
+
+    var viewModel = MainViewModel()
+    
+    @IBOutlet weak var labTitle: UILabel!
+    @IBOutlet weak var btnNextView: UIButton!
+    
     @IBOutlet var submitBtn: UIButton!
     @IBOutlet weak var btnShared: UIButton!
     @IBOutlet weak var resultLabel: UILabel!
@@ -18,7 +29,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        
+        MainVCconfigure()
+    }
+    
+    func MainVCconfigure() {
         // UITest accessibilityIdentifier 설정
         self.resultLabel.accessibilityIdentifier = "result-label"
         self.inputField.accessibilityIdentifier = "input-field"
@@ -39,6 +53,7 @@ class MainViewController: UIViewController {
             // system mode : light
             print("system mode : light")
         }
+        
         // OpenSource swiftGen
         // Color.xcassets의 커스텀 색상 사용 : 코드와 인터페이스 빌더에서 모두 사용가능, 단 개발 단계에서 오류 인지가 어렵다(오타...등등)
         // SwiftGen(OpenSource)빌드단계에서 자동으로 코드로 생성(script로 swift파일로 만들어줌)
@@ -56,6 +71,18 @@ class MainViewController: UIViewController {
         let deviceTelephoneInfo = getTelephoneInfo()
         dump(deviceTelephoneInfo)
         let deviceModelCode = getDeviceModelCode()
+        
+        // mvvm design pattern test
+        labTitle.text = viewModel.title
+        labTitle.textColor = viewModel.titleColor
+        
+        btnNextView.layer.borderColor = viewModel.titleColor.cgColor
+        btnNextView.layer.borderWidth = 2.0
+        
+        btnNextView.setTitleColor(viewModel.titleColor, for: .normal)
+        btnNextView.setTitleColor(viewModel.titleColor, for: .highlighted)
+        btnNextView.setTitle(viewModel.btnNextViewNormalName, for: .normal)
+        btnNextView.setTitle(viewModel.btnNextViewHighlightName, for: .highlighted)
     }
     
     
@@ -84,6 +111,16 @@ class MainViewController: UIViewController {
     }
     @IBAction func actionLabel(_ sender: Any){
         print("actionLabel")
+    }
+    
+    @IBAction func showNextView(_ sender: Any) {
+        viewModel.moveHandler(){ isSuccess in
+            if isSuccess {
+                print("\(#function)::move sample second")
+                // move
+//                self.performSegue(withIdentifier: "", sender: nil)
+            }
+        }
     }
     
 
