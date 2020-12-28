@@ -30,12 +30,13 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        testOS_Log()
+        testOS_LogAndLogger()
         MainVCconfigure()
         
     }
     
     func MainVCconfigure() {
+        
         // UITest accessibilityIdentifier 설정
         self.resultLabel.accessibilityIdentifier = "result-label"
         self.inputField.accessibilityIdentifier = "input-field"
@@ -81,12 +82,14 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
         btnNextView.setTitleColor(viewModel.titleColor, for: .highlighted)
         btnNextView.setTitle(viewModel.btnNextViewNormalName, for: .normal)
         btnNextView.setTitle(viewModel.btnNextViewHighlightName, for: .highlighted)
+        
+        
     }
     
     
-    func testOS_Log() {
+    func testOS_LogAndLogger() {
         // MARK: os_log & Logger(ios14이상) 테스트..
-    
+        // FIXME: 추가 테스트 필요함.
         // iOS 14이상 API 추가 Logger
         if #available(iOS 14.0, *) {
             Logger.viewCycle.info("viewInfomation")
