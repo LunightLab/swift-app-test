@@ -116,12 +116,23 @@
                                     <navigationItem title="Test list.." id="bPT-2b-GdC"/>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3lO-E4-aDf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnf-sm-bwQ">
+                                <rect key="frame" x="20" y="30" width="36" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dJu-W6-r1i"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="36" id="jtT-mz-Tru"/>
+                                </constraints>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="btnBack:" destination="bRf-OW-3vW" eventType="touchUpInside" id="zIP-ty-l1Z"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="3lO-E4-aDf">
                                 <rect key="frame" x="0.0" y="68" width="414" height="794"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FirstCell" id="DWK-AB-i2e">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DWK-AB-i2e" id="K3R-oy-0fe">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -134,17 +145,6 @@
                                     <outlet property="delegate" destination="bRf-OW-3vW" id="pUU-MA-KmI"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnf-sm-bwQ">
-                                <rect key="frame" x="20" y="30" width="36" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="dJu-W6-r1i"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="36" id="jtT-mz-Tru"/>
-                                </constraints>
-                                <state key="normal" title="back"/>
-                                <connections>
-                                    <action selector="btnBack:" destination="bRf-OW-3vW" eventType="touchUpInside" id="zIP-ty-l1Z"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FDZ-T5-L9L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -161,6 +161,9 @@
                             <constraint firstItem="ET3-H5-DOd" firstAttribute="top" secondItem="sb5-o3-L0S" secondAttribute="top" constant="24" id="vq4-D7-Jje"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="testTableView" destination="3lO-E4-aDf" id="rMd-fF-rui"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqe-Hp-0G8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -28,3 +28,4 @@ class ToastMessage {
         Toast(text: str, delay: 0.0, duration: duration ?? 2.0).show()
     }
 }
+

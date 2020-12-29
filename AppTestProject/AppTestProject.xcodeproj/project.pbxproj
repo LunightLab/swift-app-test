@@ -26,6 +26,7 @@
 		13938ABA258898DE000E2A3B /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13938AB9258898DE000E2A3B /* ToastMessage.swift */; };
 		2318E486575C4ABB3BCC1F31 /* Pods_AppTestProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C735A18B1057DD46833A403B /* Pods_AppTestProjectTests.framework */; };
 		53312F16AF662E5E6D1A1E4F /* Pods_AppTestProject_AppTestProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338B729C6DD0ABD7AD7DD5B2 /* Pods_AppTestProject_AppTestProjectUITests.framework */; };
+		B92586EF259AB91E008DC9A2 /* AppVersionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92586EE259AB91E008DC9A2 /* AppVersionCheck.swift */; };
 		B9411D302593183300F9945D /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9411D2F2593183300F9945D /* DeviceInfo.swift */; };
 		B95A6E342591AD5D00AB985E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137B905F258334BC00300DC5 /* Main.storyboard */; };
 		B95A6E382591AD6000AB985E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137B905F258334BC00300DC5 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		B9A827092599CA43008258A0 /* TestListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A827082599CA43008258A0 /* TestListViewController.swift */; };
 		B9A8270E2599CA52008258A0 /* TestListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A8270D2599CA52008258A0 /* TestListViewModel.swift */; };
 		B9A827132599CA5E008258A0 /* TestListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A827122599CA5E008258A0 /* TestListModel.swift */; };
+		B9A82718259A0127008258A0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A82717259A0127008258A0 /* WebKit.framework */; };
 		B9AD90632594516300DFB5B9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AD90622594516300DFB5B9 /* MainViewModel.swift */; };
 		D1C378A25C8BB4566B28F8B6 /* Pods_AppTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658DFB979BE4F8BFB82A1784 /* Pods_AppTestProject.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +89,7 @@
 		6D87316BB4D86903CB4E3A15 /* Pods-AppTestProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-AppTestProjectTests/Pods-AppTestProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		84ECBBD4303B454E0E447453 /* Pods-AppTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProject.release.xcconfig"; path = "Target Support Files/Pods-AppTestProject/Pods-AppTestProject.release.xcconfig"; sourceTree = "<group>"; };
 		A5391159E321CCEEC0D162CC /* Pods-AppTestProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AppTestProjectTests/Pods-AppTestProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		B92586EE259AB91E008DC9A2 /* AppVersionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionCheck.swift; sourceTree = "<group>"; };
 		B9411D2F2593183300F9945D /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		B9A826F52599BEDE008258A0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B9A826FD2599BF20008258A0 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 		B9A827082599CA43008258A0 /* TestListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListViewController.swift; sourceTree = "<group>"; };
 		B9A8270D2599CA52008258A0 /* TestListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListViewModel.swift; sourceTree = "<group>"; };
 		B9A827122599CA5E008258A0 /* TestListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListModel.swift; sourceTree = "<group>"; };
+		B9A82717259A0127008258A0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B9AD90622594516300DFB5B9 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		C735A18B1057DD46833A403B /* Pods_AppTestProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTestProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF30ACD64AA8ADF82A07EBDF /* Pods-AppTestProject-AppTestProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProject-AppTestProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppTestProject-AppTestProjectUITests/Pods-AppTestProject-AppTestProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A82718259A0127008258A0 /* WebKit.framework in Frameworks */,
 				D1C378A25C8BB4566B28F8B6 /* Pods_AppTestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +148,7 @@
 			children = (
 				13108F322586F409003BFFD5 /* Extensions.swift */,
 				B9411D2F2593183300F9945D /* DeviceInfo.swift */,
+				B92586EE259AB91E008DC9A2 /* AppVersionCheck.swift */,
 				13108F6925871DEB003BFFD5 /* TraceLog.swift */,
 				13938AB9258898DE000E2A3B /* ToastMessage.swift */,
 			);
@@ -245,6 +251,7 @@
 		79A10BE275906C6BEB0010C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B9A82717259A0127008258A0 /* WebKit.framework */,
 				658DFB979BE4F8BFB82A1784 /* Pods_AppTestProject.framework */,
 				338B729C6DD0ABD7AD7DD5B2 /* Pods_AppTestProject_AppTestProjectUITests.framework */,
 				C735A18B1057DD46833A403B /* Pods_AppTestProjectTests.framework */,
@@ -572,6 +579,7 @@
 				13938ABA258898DE000E2A3B /* ToastMessage.swift in Sources */,
 				137B905C258334BC00300DC5 /* SceneDelegate.swift in Sources */,
 				B9411D302593183300F9945D /* DeviceInfo.swift in Sources */,
+				B92586EF259AB91E008DC9A2 /* AppVersionCheck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
