@@ -18,5 +18,5 @@ enum NormalTestList: String, CaseIterable{
     static var count:Int { return  NormalTestList.allCases.count }
 }
 
-let normalTestList:[String] = ["enum", "String test"]
-let hardTestList:[String] = ["wkwebview","Autolayout"]
+let normalTestList:[String] = ["👨🏻‍💻wkwebview - basic(💬)", "👨🏻‍💻enum", "👨🏻‍💻String test"]
+let hardTestList:[String] = ["👨🏻‍💻wkwebview - script(💬)","👨🏻‍💻Autolayout"]

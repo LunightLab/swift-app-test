@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+
 // FIXME: MVVM 적용 필요
 class TestListViewController: UIViewController {
     
@@ -67,12 +69,7 @@ extension TestListViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.section == 0 {
             switch indexPath.row {
             case 0:
-                guard let webvc = self.storyboard?.instantiateViewController(withIdentifier: "WebViewController") else {
-                    return
-                }
-                webvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
-                webvc.modalPresentationStyle = .fullScreen
-                self.present(webvc, animated: true)
+                ToastMessage.Message(str: "작업중", duration: 2.0)
             case 1:
                 ToastMessage.Message(str: "작업중", duration: 2.0)
             default:
@@ -81,7 +78,21 @@ extension TestListViewController: UITableViewDelegate, UITableViewDataSource {
         }else if indexPath.section == 1{
             switch indexPath.row {
             case 0:
-                ToastMessage.Message(str: "작업중", duration: 2.0)
+                // MARK: 👨🏻‍💻wkwebview - basic
+                if Reachability.isConnectedToNetwork() {
+                    guard let webvc = self.storyboard?.instantiateViewController(withIdentifier: "WebViewController") else {
+                        return
+                    }
+                    webvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+                    webvc.modalPresentationStyle = .fullScreen
+                    self.present(webvc, animated: true)
+                }else{
+                    let alert = UIAlertController(title: "네트워크 에러", message: "네트워크를 확인해주세요", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "확인", style: .default, handler: {(action: UIAlertAction!) in
+                        print("exit()")
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                }
             case 1:
                 ToastMessage.Message(str: "작업중", duration: 2.0)
             default:
@@ -90,5 +101,11 @@ extension TestListViewController: UITableViewDelegate, UITableViewDataSource {
         } else { ToastMessage.Message(str: "연결섹션이 없음.", duration: 2.0) }
 
         
+    }
+}
+
+class NetworkState {
+    class func isConnected() ->Bool {
+        return NetworkReachabilityManager()!.isReachable
     }
 }

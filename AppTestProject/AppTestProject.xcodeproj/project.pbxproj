@@ -27,6 +27,7 @@
 		2318E486575C4ABB3BCC1F31 /* Pods_AppTestProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C735A18B1057DD46833A403B /* Pods_AppTestProjectTests.framework */; };
 		53312F16AF662E5E6D1A1E4F /* Pods_AppTestProject_AppTestProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338B729C6DD0ABD7AD7DD5B2 /* Pods_AppTestProject_AppTestProjectUITests.framework */; };
 		B92586EF259AB91E008DC9A2 /* AppVersionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92586EE259AB91E008DC9A2 /* AppVersionCheck.swift */; };
+		B92586F4259AF67F008DC9A2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92586F3259AF67F008DC9A2 /* Reachability.swift */; };
 		B9411D302593183300F9945D /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9411D2F2593183300F9945D /* DeviceInfo.swift */; };
 		B95A6E342591AD5D00AB985E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137B905F258334BC00300DC5 /* Main.storyboard */; };
 		B95A6E382591AD6000AB985E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137B905F258334BC00300DC5 /* Main.storyboard */; };
@@ -90,6 +91,7 @@
 		84ECBBD4303B454E0E447453 /* Pods-AppTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProject.release.xcconfig"; path = "Target Support Files/Pods-AppTestProject/Pods-AppTestProject.release.xcconfig"; sourceTree = "<group>"; };
 		A5391159E321CCEEC0D162CC /* Pods-AppTestProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AppTestProjectTests/Pods-AppTestProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		B92586EE259AB91E008DC9A2 /* AppVersionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionCheck.swift; sourceTree = "<group>"; };
+		B92586F3259AF67F008DC9A2 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		B9411D2F2593183300F9945D /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		B9A826F52599BEDE008258A0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B9A826FD2599BF20008258A0 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
@@ -136,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				13108FC22587506A003BFFD5 /* Images */,
-				13108F522586F93F003BFFD5 /* Assets+Generated.swift */,
 				137B9062258334BD00300DC5 /* Assets.xcassets */,
 				13108F082586EC00003BFFD5 /* Color.xcassets */,
 			);
@@ -151,6 +152,7 @@
 				B92586EE259AB91E008DC9A2 /* AppVersionCheck.swift */,
 				13108F6925871DEB003BFFD5 /* TraceLog.swift */,
 				13938AB9258898DE000E2A3B /* ToastMessage.swift */,
+				B92586F3259AF67F008DC9A2 /* Reachability.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -166,6 +168,7 @@
 		137B904D258334BC00300DC5 = {
 			isa = PBXGroup;
 			children = (
+				13108F522586F93F003BFFD5 /* Assets+Generated.swift */,
 				137B9058258334BC00300DC5 /* AppTestProject */,
 				137B906F258334BD00300DC5 /* AppTestProjectTests */,
 				137B907A258334BD00300DC5 /* AppTestProjectUITests */,
@@ -564,6 +567,7 @@
 			files = (
 				B9A826FE2599BF20008258A0 /* WebViewModel.swift in Sources */,
 				13108F6A25871DEB003BFFD5 /* TraceLog.swift in Sources */,
+				B92586F4259AF67F008DC9A2 /* Reachability.swift in Sources */,
 				B9A827132599CA5E008258A0 /* TestListModel.swift in Sources */,
 				B9A827032599BF29008258A0 /* WebModel.swift in Sources */,
 				13108F332586F409003BFFD5 /* Extensions.swift in Sources */,
