@@ -456,7 +456,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# Swift Gen(Color.xcassets)\nswiftgen xcassets ${TARGETNAME}/Resource/Color.xcassets -t swift4 --output \"${TARGETNAME}/Resource/Assets+Generated.swift\"\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# Build run script \n# Auto increment Version number when Archive\n#if [ $CONFIGURATION == Release ]; then \nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n#fi\n\n# Swift Gen(Color.xcassets)\nswiftgen xcassets ${TARGETNAME}/Resource/Color.xcassets -t swift4 --output \"${TARGETNAME}/Resource/Assets+Generated.swift\"\n\n";
 		};
 		44805A85CEAB3B8D19C145DF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
