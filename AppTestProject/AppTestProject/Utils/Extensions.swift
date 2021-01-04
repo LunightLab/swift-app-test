@@ -25,10 +25,11 @@ extension OSLog {
     private static var subsystem = Bundle.main.bundleIdentifier!
     
     /// Logs the view cycles like viewDidLoad.
-    static let viewCycle = OSLog(subsystem: subsystem, category: "viewCycle")
-    static let getData = OSLog(subsystem: subsystem, category: "data")
-    static let disable = OSLog(subsystem: subsystem, category: "disable")
-    static let lunigtLab = OSLog(subsystem: subsystem, category: "내가 체크한 로그")
+    static let viewCycle = OSLog(subsystem: subsystem, category: "📱viewCycle")
+    static let setting = OSLog(subsystem: subsystem, category: "💬setting")
+    static let getData = OSLog(subsystem: subsystem, category: "👨🏻‍💻data")
+    static let disable = OSLog(subsystem: subsystem, category: "❌disable")
+    static let lunigtLab = OSLog(subsystem: subsystem, category: "😈내가 체크한 로그")
 }
 
 @available(iOS 14.0, *)

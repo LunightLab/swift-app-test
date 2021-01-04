@@ -74,7 +74,10 @@ class SimpleMvvmVC: UIViewController, SimpleMvvmVCProtocol {
     }
     
     func viewConfigure() {
-        navibar.topItem?.title = "simple mvvm test"
+
+        os_log("viewCongifure", log: OSLog.setting, type: .default)
+        
+        navibar.topItem?.title = viewModel.title
         // tintColor면 navigation items과 bar button items에 적용
         navibar.tintColor = viewModel.fontColor
 
