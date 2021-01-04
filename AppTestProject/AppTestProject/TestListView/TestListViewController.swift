@@ -68,9 +68,16 @@ extension TestListViewController: UITableViewDelegate, UITableViewDataSource {
         
         if indexPath.section == 0 {
             switch indexPath.row {
-            case 0:
+            case 0: // MARK: 👨🏻‍💻wkwebview - script
                 ToastMessage.Message(str: "작업중", duration: 2.0)
-            case 1:
+            case 1: // MARK: 👨🏻‍💻mvvm-simple
+                guard let webvc = self.storyboard?.instantiateViewController(withIdentifier: "SimpleMvvmVC") else {
+                    return
+                }
+                webvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+                webvc.modalPresentationStyle = .fullScreen
+                self.present(webvc, animated: true)
+            case 2: // MARK: 👨🏻‍💻mvvm(rxswift)
                 ToastMessage.Message(str: "작업중", duration: 2.0)
             default:
                 ToastMessage.Message(str: "연결필요", duration: 2.0)

@@ -83,7 +83,6 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
         btnNextView.setTitle(viewModel.btnNextViewNormalName, for: .normal)
         btnNextView.setTitle(viewModel.btnNextViewHighlightName, for: .highlighted)
         
-        
     }
     
     
@@ -106,16 +105,6 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
         
     }
     // MARK: -
-
-    /// Device 정보 가져오기
-    func getDeviceAndUserInfo() {
-        // MARK: Device 정보 가져오기
-        let deviceTelephoneInfo = getTelephoneInfo()
-        dump(deviceTelephoneInfo)
-        let deviceModelCode = getDeviceModelCode()
-        
-    }
-    
     
     // 외부 공유하기
     // url : https://www.swiftdevcenter.com/uiactivityviewcontroller-tutorial-by-example/
