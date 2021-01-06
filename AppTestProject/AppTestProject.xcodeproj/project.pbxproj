@@ -42,6 +42,7 @@
 		B9A827132599CA5E008258A0 /* TestListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A827122599CA5E008258A0 /* TestListModel.swift */; };
 		B9A82718259A0127008258A0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A82717259A0127008258A0 /* WebKit.framework */; };
 		B9AD90632594516300DFB5B9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AD90622594516300DFB5B9 /* MainViewModel.swift */; };
+		B9EBD21525A571E700BDAC30 /* NetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD21425A571E700BDAC30 /* NetworkVC.swift */; };
 		D1C378A25C8BB4566B28F8B6 /* Pods_AppTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658DFB979BE4F8BFB82A1784 /* Pods_AppTestProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		B9A827122599CA5E008258A0 /* TestListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListModel.swift; sourceTree = "<group>"; };
 		B9A82717259A0127008258A0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B9AD90622594516300DFB5B9 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		B9EBD21425A571E700BDAC30 /* NetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkVC.swift; sourceTree = "<group>"; };
 		C735A18B1057DD46833A403B /* Pods_AppTestProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTestProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF30ACD64AA8ADF82A07EBDF /* Pods-AppTestProject-AppTestProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProject-AppTestProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppTestProject-AppTestProjectUITests/Pods-AppTestProject-AppTestProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -290,6 +292,7 @@
 				B96B83A825A2DD3A00ECFB12 /* 2.mvvm-simple */,
 				B96B83A925A2DD4800ECFB12 /* 3.mvvm-rxswift */,
 				B96B83AA25A2DD8000ECFB12 /* 4.AutoLayout */,
+				B9EBD21025A5712200BDAC30 /* 5.Network */,
 			);
 			path = hard;
 			sourceTree = "<group>";
@@ -353,6 +356,14 @@
 				137B905F258334BC00300DC5 /* Main.storyboard */,
 			);
 			path = AppStoryBoard;
+			sourceTree = "<group>";
+		};
+		B9EBD21025A5712200BDAC30 /* 5.Network */ = {
+			isa = PBXGroup;
+			children = (
+				B9EBD21425A571E700BDAC30 /* NetworkVC.swift */,
+			);
+			path = 5.Network;
 			sourceTree = "<group>";
 		};
 		FD2B65F60190724C9FEFC07F /* Pods */ = {
@@ -637,6 +648,7 @@
 				B9A827132599CA5E008258A0 /* TestListModel.swift in Sources */,
 				B9A827032599BF29008258A0 /* WebModel.swift in Sources */,
 				13108F332586F409003BFFD5 /* Extensions.swift in Sources */,
+				B9EBD21525A571E700BDAC30 /* NetworkVC.swift in Sources */,
 				B96B83AC25A2DDA100ECFB12 /* SimpleMvvmVC.swift in Sources */,
 				B9AD90632594516300DFB5B9 /* MainViewModel.swift in Sources */,
 				13938A82258877AA000E2A3B /* LaunchSplashView.swift in Sources */,

@@ -79,6 +79,10 @@ extension TestListViewController: UITableViewDelegate, UITableViewDataSource {
                 self.present(webvc, animated: true)
             case 2: // MARK: 👨🏻‍💻mvvm(rxswift)
                 ToastMessage.Message(str: "작업중", duration: 2.0)
+            case 3: // MARK: 👨🏻‍💻Network
+                guard let webvc = self.storyboard?.instantiateViewController(withIdentifier: "NetworkVC") else {
+                    return
+                }
             default:
                 ToastMessage.Message(str: "연결필요", duration: 2.0)
             }
