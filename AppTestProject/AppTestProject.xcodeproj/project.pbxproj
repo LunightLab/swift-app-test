@@ -26,6 +26,7 @@
 		13938ABA258898DE000E2A3B /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13938AB9258898DE000E2A3B /* ToastMessage.swift */; };
 		2318E486575C4ABB3BCC1F31 /* Pods_AppTestProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C735A18B1057DD46833A403B /* Pods_AppTestProjectTests.framework */; };
 		53312F16AF662E5E6D1A1E4F /* Pods_AppTestProject_AppTestProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338B729C6DD0ABD7AD7DD5B2 /* Pods_AppTestProject_AppTestProjectUITests.framework */; };
+		B913707D25A6CD6400E75D9A /* SupportLanguageCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913707C25A6CD6400E75D9A /* SupportLanguageCode.swift */; };
 		B92586EF259AB91E008DC9A2 /* AppVersionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92586EE259AB91E008DC9A2 /* AppVersionCheck.swift */; };
 		B92586F4259AF67F008DC9A2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92586F3259AF67F008DC9A2 /* Reachability.swift */; };
 		B9411D302593183300F9945D /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9411D2F2593183300F9945D /* DeviceInfo.swift */; };
@@ -43,16 +44,6 @@
 		B9A82718259A0127008258A0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A82717259A0127008258A0 /* WebKit.framework */; };
 		B9AD90632594516300DFB5B9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AD90622594516300DFB5B9 /* MainViewModel.swift */; };
 		B9EBD21525A571E700BDAC30 /* NetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD21425A571E700BDAC30 /* NetworkVC.swift */; };
-		B9EBD21F25A5766A00BDAC30 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD21E25A5766A00BDAC30 /* EndPointType.swift */; };
-		B9EBD22725A576E300BDAC30 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD22625A576E300BDAC30 /* HTTPMethod.swift */; };
-		B9EBD22F25A5781300BDAC30 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD22E25A5781300BDAC30 /* HTTPTask.swift */; };
-		B9EBD23425A5790100BDAC30 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD23325A5790100BDAC30 /* ParameterEncoding.swift */; };
-		B9EBD23925A5795B00BDAC30 /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD23825A5795B00BDAC30 /* URLParameterEncoding.swift */; };
-		B9EBD23E25A5797F00BDAC30 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD23D25A5797F00BDAC30 /* JSONParameterEncoder.swift */; };
-		B9EBD24325A57A0100BDAC30 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD24225A57A0100BDAC30 /* NetworkManager.swift */; };
-		B9EBD24825A57A2E00BDAC30 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD24725A57A2E00BDAC30 /* NetworkRouter.swift */; };
-		B9EBD24D25A57AC800BDAC30 /* Networklogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD24C25A57AC800BDAC30 /* Networklogger.swift */; };
-		B9EBD25225A57B2500BDAC30 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD25125A57B2500BDAC30 /* Router.swift */; };
 		D1C378A25C8BB4566B28F8B6 /* Pods_AppTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658DFB979BE4F8BFB82A1784 /* Pods_AppTestProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +95,7 @@
 		6D87316BB4D86903CB4E3A15 /* Pods-AppTestProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-AppTestProjectTests/Pods-AppTestProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		84ECBBD4303B454E0E447453 /* Pods-AppTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProject.release.xcconfig"; path = "Target Support Files/Pods-AppTestProject/Pods-AppTestProject.release.xcconfig"; sourceTree = "<group>"; };
 		A5391159E321CCEEC0D162CC /* Pods-AppTestProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AppTestProjectTests/Pods-AppTestProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		B913707C25A6CD6400E75D9A /* SupportLanguageCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportLanguageCode.swift; sourceTree = "<group>"; };
 		B92586EE259AB91E008DC9A2 /* AppVersionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionCheck.swift; sourceTree = "<group>"; };
 		B92586F3259AF67F008DC9A2 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		B9411D2F2593183300F9945D /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
@@ -119,16 +111,6 @@
 		B9A82717259A0127008258A0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B9AD90622594516300DFB5B9 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		B9EBD21425A571E700BDAC30 /* NetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkVC.swift; sourceTree = "<group>"; };
-		B9EBD21E25A5766A00BDAC30 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
-		B9EBD22625A576E300BDAC30 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		B9EBD22E25A5781300BDAC30 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
-		B9EBD23325A5790100BDAC30 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		B9EBD23825A5795B00BDAC30 /* URLParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
-		B9EBD23D25A5797F00BDAC30 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
-		B9EBD24225A57A0100BDAC30 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		B9EBD24725A57A2E00BDAC30 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
-		B9EBD24C25A57AC800BDAC30 /* Networklogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networklogger.swift; sourceTree = "<group>"; };
-		B9EBD25125A57B2500BDAC30 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C735A18B1057DD46833A403B /* Pods_AppTestProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTestProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF30ACD64AA8ADF82A07EBDF /* Pods-AppTestProject-AppTestProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProject-AppTestProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppTestProject-AppTestProjectUITests/Pods-AppTestProject-AppTestProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				137B90892583452500300DC5 /* Year.swift */,
+				B913707C25A6CD6400E75D9A /* SupportLanguageCode.swift */,
 			);
 			path = SampleCode;
 			sourceTree = "<group>";
@@ -408,7 +391,6 @@
 		B9EBD21B25A5755F00BDAC30 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				B9EBD24225A57A0100BDAC30 /* NetworkManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -416,12 +398,6 @@
 		B9EBD21C25A5756700BDAC30 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				B9EBD21E25A5766A00BDAC30 /* EndPointType.swift */,
-				B9EBD22625A576E300BDAC30 /* HTTPMethod.swift */,
-				B9EBD24725A57A2E00BDAC30 /* NetworkRouter.swift */,
-				B9EBD24C25A57AC800BDAC30 /* Networklogger.swift */,
-				B9EBD22E25A5781300BDAC30 /* HTTPTask.swift */,
-				B9EBD25125A57B2500BDAC30 /* Router.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -429,9 +405,6 @@
 		B9EBD21D25A5757000BDAC30 /* Encoding */ = {
 			isa = PBXGroup;
 			children = (
-				B9EBD23325A5790100BDAC30 /* ParameterEncoding.swift */,
-				B9EBD23825A5795B00BDAC30 /* URLParameterEncoding.swift */,
-				B9EBD23D25A5797F00BDAC30 /* JSONParameterEncoder.swift */,
 			);
 			path = Encoding;
 			sourceTree = "<group>";
@@ -713,30 +686,21 @@
 			files = (
 				B96B83B425A2DDB200ECFB12 /* SimpleMvvmVM.swift in Sources */,
 				B9A826FE2599BF20008258A0 /* WebViewModel.swift in Sources */,
-				B9EBD22725A576E300BDAC30 /* HTTPMethod.swift in Sources */,
 				13108F6A25871DEB003BFFD5 /* TraceLog.swift in Sources */,
 				B92586F4259AF67F008DC9A2 /* Reachability.swift in Sources */,
 				B9A827132599CA5E008258A0 /* TestListModel.swift in Sources */,
 				B9A827032599BF29008258A0 /* WebModel.swift in Sources */,
 				13108F332586F409003BFFD5 /* Extensions.swift in Sources */,
 				B9EBD21525A571E700BDAC30 /* NetworkVC.swift in Sources */,
-				B9EBD21F25A5766A00BDAC30 /* EndPointType.swift in Sources */,
 				B96B83AC25A2DDA100ECFB12 /* SimpleMvvmVC.swift in Sources */,
 				B9AD90632594516300DFB5B9 /* MainViewModel.swift in Sources */,
-				B9EBD24325A57A0100BDAC30 /* NetworkManager.swift in Sources */,
-				B9EBD23E25A5797F00BDAC30 /* JSONParameterEncoder.swift in Sources */,
 				13938A82258877AA000E2A3B /* LaunchSplashView.swift in Sources */,
 				137B905E258334BC00300DC5 /* MainViewController.swift in Sources */,
 				13108F532586F93F003BFFD5 /* Assets+Generated.swift in Sources */,
 				137B905A258334BC00300DC5 /* AppDelegate.swift in Sources */,
 				B9A826F62599BEDE008258A0 /* WebViewController.swift in Sources */,
-				B9EBD24825A57A2E00BDAC30 /* NetworkRouter.swift in Sources */,
 				B9A8270E2599CA52008258A0 /* TestListViewModel.swift in Sources */,
-				B9EBD23425A5790100BDAC30 /* ParameterEncoding.swift in Sources */,
-				B9EBD25225A57B2500BDAC30 /* Router.swift in Sources */,
-				B9EBD22F25A5781300BDAC30 /* HTTPTask.swift in Sources */,
-				B9EBD23925A5795B00BDAC30 /* URLParameterEncoding.swift in Sources */,
-				B9EBD24D25A57AC800BDAC30 /* Networklogger.swift in Sources */,
+				B913707D25A6CD6400E75D9A /* SupportLanguageCode.swift in Sources */,
 				B96B83B925A2DDBF00ECFB12 /* SimpleMvvmM.swift in Sources */,
 				137B908A2583452500300DC5 /* Year.swift in Sources */,
 				B9A827092599CA43008258A0 /* TestListViewController.swift in Sources */,

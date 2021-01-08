@@ -27,14 +27,42 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var inputField: UITextField!
     
+    // MARK: -
+    // MARK: View LiftCycle functions
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        testOS_LogAndLogger()
+//        testOS_LogAndLogger()
         MainVCconfigure()
+        getUserInfo()
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+    }
+    
+    // MARK: -
     func MainVCconfigure() {
         
         // UITest accessibilityIdentifier 설정
@@ -85,6 +113,33 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
         
     }
     
+    func getUserInfo() {
+        
+        // simcard check & 통신사 정보확인
+        if checkSimCard() {
+            let celphoneInfo = getTelephoneInfo() // 심카드 체크
+            dump(celphoneInfo)
+        }else{
+            
+        }
+        // get device model
+        dump(getDeviceModelCode())
+        
+        // get OS version
+        dump(getOsVersion())
+        // get App version
+        dump(getAppVersion())
+        
+        // get App name
+        dump(getAppName())
+        
+        // get device unique code
+        dump(getDeviceUniqueCode())
+        
+        dump(getDeviceType())
+        
+        dump(getLanguageCode())
+    }
     
     func testOS_LogAndLogger() {
         // MARK: os_log & Logger(ios14이상) 테스트..
@@ -100,8 +155,9 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
             os_log("View error", log:OSLog.getData, type: .error)
     //        os_log("User %{public}@ logged in", log: OSLog.userFlow, type: .info, username)
     //        os_log("User %{private}@ logged in", log: OSLog.userFlow, type: .info, username)
-            
         }
+        os_log("View did load!", log: OSLog.viewCycle, type: .info)
+        os_log("View error", log:OSLog.lunigtLab, type: .error)
         
     }
     // MARK: -

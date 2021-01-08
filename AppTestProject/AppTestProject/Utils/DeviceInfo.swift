@@ -9,12 +9,10 @@
 import Foundation
 import Darwin
 import CoreTelephony
+import UIKit
 
-/**
- 통신사 정보 가져오기
- 
- @return 통신사 정보
- */
+/// 통신사 정보 가져오기
+/// - Returns: 통신사 정보 Dictionary
 func getTelephoneInfo() -> Dictionary<String,Any> {
 
     var resultTelephoneInfo = [String:Any]()
@@ -43,10 +41,8 @@ func getTelephoneInfo() -> Dictionary<String,Any> {
     return resultTelephoneInfo
 }
 
-/**
-통신사 정보 가져오기
-@return 유심유무 체크
-*/
+/// 디바이스 USIM check
+/// - Returns: 유심유무 Bool
 func checkSimCard() -> Bool {
     
     let simInfo = CTTelephonyNetworkInfo()
@@ -60,6 +56,10 @@ func checkSimCard() -> Bool {
     return false
 }
 
+/// 디바이스 코드
+/// - Description : 디바이스 고유 number 코드값을 가져옴 ex.) iPhone9,3
+///   - ref : https://en.wikipedia.org/wiki/List_of_iOS_and_iPadOS_devices
+/// - Returns: 디바이스 코드 String
 func getDeviceModelCode() -> String {
     
     var systemInfo = utsname()
@@ -75,3 +75,56 @@ func getDeviceModelCode() -> String {
     return modelCode
 }
 
+/// iOS 버전 구하기
+/// - Returns: OS 버전 String
+func getOsVersion() -> String {
+    let os = ProcessInfo().operatingSystemVersion
+    return String(os.majorVersion) + "." + String(os.minorVersion) + "." + String(os.patchVersion)
+}
+
+
+/// 앱 버전
+/// - Returns: App 버전 String
+func getAppVersion() -> String {
+    let dictionary = Bundle.main.infoDictionary!
+    let version = dictionary["CFBundleShortVersionString"] as! String
+    let build = dictionary["CFBundleVersion"] as! String
+    return version + "(" + build + ")"
+}
+
+/// 앱 이름 정보를 가져온다.
+/// - Returns: App display name return String
+func getAppName() -> String {
+    let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as! String
+    return appName
+}
+
+/// 고유한 번호(UUID)를 구한다.
+/// - Returns: UUID String
+func getDeviceUniqueCode() -> String{
+    let deviceUUID = UIDevice.current.identifierForVendor?.uuid
+    let deviceVendorID = UIDevice.current.identifierForVendor?.uuidString ?? "nil"
+    dump(deviceUUID)
+    dump(deviceVendorID)
+    return deviceVendorID
+}
+
+
+func getDeviceModel() -> String {
+    return UIDevice.current.model
+}
+
+
+/// 디바이스 타입을 번환한다.
+///  - Description : iphone 인지 pad인지 번환
+/// - Returns: Device type String
+func getDeviceType() -> String {
+    return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone ? "phone" : "pad"
+}
+
+/// 언어정보 가져오기
+/// - Returns: 언어코드 String
+func getLanguageCode() -> String {
+    let languagePrefix = Locale.preferredLanguages[0]
+    return languagePrefix
+}
