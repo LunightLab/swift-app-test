@@ -66,11 +66,11 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
     func MainVCconfigure() {
         
         // UITest accessibilityIdentifier 설정
-        self.resultLabel.accessibilityIdentifier = "result-label"
-        self.inputField.accessibilityIdentifier = "input-field"
-        self.submitBtn.accessibilityIdentifier = "submit-button"
-        self.btnShared.accessibilityIdentifier = "shareBtn"
-        
+//        self.resultLabel.accessibilityIdentifier = "result-label"
+//        self.inputField.accessibilityIdentifier = "input-field"
+//        self.submitBtn.accessibilityIdentifier = "submit-button"
+//        self.btnShared.accessibilityIdentifier = "shareBtn"
+//
         // Color.xcassets 지원버전 iOS 11.0
         if #available(iOS 13.0, *) {
             if UITraitCollection.current.userInterfaceStyle == .dark {
@@ -100,8 +100,8 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
 //        view.backgroundColor = AssetColor.systemBackground // Extension 참고.
         
         // mvvm design pattern test
-        labTitle.text = viewModel.title
-        labTitle.textColor = viewModel.titleColor
+//        labTitle.text = viewModel.title
+//        labTitle.textColor = viewModel.titleColor
         
         btnNextView.layer.borderColor = viewModel.titleColor.cgColor
         btnNextView.layer.borderWidth = 2.0
