@@ -8,6 +8,7 @@
 
 import UIKit
 import Lottie
+import OSLog
 
 protocol MainViewControllerProtocol {
     var viewModel: MainViewModel { get set }
@@ -26,19 +27,50 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var inputField: UITextField!
     
+    // MARK: -
+    // MARK: View LiftCycle functions
     override func viewDidLoad() {
 
         super.viewDidLoad()
+//        testOS_LogAndLogger()
         MainVCconfigure()
+        getUserInfo()
+        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+    }
+    
+    // MARK: -
     func MainVCconfigure() {
-        // UITest accessibilityIdentifier 설정
-        self.resultLabel.accessibilityIdentifier = "result-label"
-        self.inputField.accessibilityIdentifier = "input-field"
-        self.submitBtn.accessibilityIdentifier = "submit-button"
-        self.btnShared.accessibilityIdentifier = "shareBtn"
         
+        // UITest accessibilityIdentifier 설정
+//        self.resultLabel.accessibilityIdentifier = "result-label"
+//        self.inputField.accessibilityIdentifier = "input-field"
+//        self.submitBtn.accessibilityIdentifier = "submit-button"
+//        self.btnShared.accessibilityIdentifier = "shareBtn"
+//
         // Color.xcassets 지원버전 iOS 11.0
         if #available(iOS 13.0, *) {
             if UITraitCollection.current.userInterfaceStyle == .dark {
@@ -67,14 +99,9 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
 //        view.backgroundColor = UIColor.systemBackground // ios12이하에서 지원하지 못해 extension 추가.
 //        view.backgroundColor = AssetColor.systemBackground // Extension 참고.
         
-        // device info
-        let deviceTelephoneInfo = getTelephoneInfo()
-        dump(deviceTelephoneInfo)
-        let deviceModelCode = getDeviceModelCode()
-        
         // mvvm design pattern test
-        labTitle.text = viewModel.title
-        labTitle.textColor = viewModel.titleColor
+//        labTitle.text = viewModel.title
+//        labTitle.textColor = viewModel.titleColor
         
         btnNextView.layer.borderColor = viewModel.titleColor.cgColor
         btnNextView.layer.borderWidth = 2.0
@@ -83,12 +110,62 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
         btnNextView.setTitleColor(viewModel.titleColor, for: .highlighted)
         btnNextView.setTitle(viewModel.btnNextViewNormalName, for: .normal)
         btnNextView.setTitle(viewModel.btnNextViewHighlightName, for: .highlighted)
+        
     }
     
+    func getUserInfo() {
+        
+        // simcard check & 통신사 정보확인
+        if checkSimCard() {
+            let celphoneInfo = getTelephoneInfo() // 심카드 체크
+            dump(celphoneInfo)
+        }else{
+            
+        }
+        // get device model
+        dump(getDeviceModelCode())
+        
+        // get OS version
+        dump(getOsVersion())
+        // get App version
+        dump(getAppVersion())
+        
+        // get App name
+        dump(getAppName())
+        
+        // get device unique code
+        dump(getDeviceUniqueCode())
+        
+        dump(getDeviceType())
+        
+        dump(getLanguageCode())
+    }
+    
+    func testOS_LogAndLogger() {
+        // MARK: os_log & Logger(ios14이상) 테스트..
+        // FIXME: 추가 테스트 필요함.
+        // iOS 14이상 API 추가 Logger
+        if #available(iOS 14.0, *) {
+            Logger.viewCycle.info("viewInfomation")
+            Logger.viewCycle.debug("User debug")
+//            Logger.viewCycle.debug("User \(username, privacy: .private) logged in")
+        } else {
+            // Fallback on earlier versions
+            os_log("View did load!", log: OSLog.viewCycle, type: .info)
+            os_log("View error", log:OSLog.getData, type: .error)
+    //        os_log("User %{public}@ logged in", log: OSLog.userFlow, type: .info, username)
+    //        os_log("User %{private}@ logged in", log: OSLog.userFlow, type: .info, username)
+        }
+        os_log("View did load!", log: OSLog.viewCycle, type: .info)
+        os_log("View error", log:OSLog.lunigtLab, type: .error)
+        
+    }
+    // MARK: -
     
     // 외부 공유하기
     // url : https://www.swiftdevcenter.com/uiactivityviewcontroller-tutorial-by-example/
     @IBAction func doShare(_ sender: Any){
+        // MARK: 외부 공유하기
         let shareText: String = "share text string"
         var shareObject = [Any]()
         shareObject.append(shareText)
@@ -117,13 +194,14 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
         viewModel.moveHandler(){ isSuccess in
             if isSuccess {
                 print("\(#function)::move sample second")
-                // move
-//                self.performSegue(withIdentifier: "", sender: nil)
+                guard let webvc = self.storyboard?.instantiateViewController(withIdentifier: "TestListViewController") else {
+                    return
+                }
+                webvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+                webvc.modalPresentationStyle = .fullScreen
+                self.present(webvc, animated: true)
             }
         }
     }
-    
-
-
 }
 

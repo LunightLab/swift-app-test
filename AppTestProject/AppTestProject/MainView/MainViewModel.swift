@@ -19,14 +19,14 @@ protocol MainViewProtocol {
 public class MainViewModel: MainViewProtocol {
     
     public var title: String {
-        return "Sample title"
+        return "Sample Test board"
     }
     public var titleColor: UIColor {
         return Asset.defaultTextColor.color // Asset.DefaultTextColor.color
     }
     
-    var btnNextViewHighlightName: String? = "Next View"
-    var btnNextViewNormalName: String? = "  .. Clicked  "
+    var btnNextViewHighlightName: String? = "이동합니다."
+    var btnNextViewNormalName: String? = " Swift test list  "
     
     func moveHandler(completion: @escaping (Bool) -> Void) {
         print("\(#function)::success, move sample view")

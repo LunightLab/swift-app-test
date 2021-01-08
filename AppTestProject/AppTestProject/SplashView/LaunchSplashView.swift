@@ -23,7 +23,7 @@ class LaunchSplashView: UIViewController {
         animationView = .init(name: "lottie-developer")
         animationView!.frame = view.bounds
         animationView!.contentMode = .scaleAspectFit
-        animationView!.animationSpeed = 1.0
+        animationView!.animationSpeed = 2.0
         view.addSubview(animationView!)
 
         animationView!.play(fromProgress: 0,
