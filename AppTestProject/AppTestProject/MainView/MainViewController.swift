@@ -15,6 +15,7 @@ protocol MainViewControllerProtocol {
     func MainVCconfigure()
 }
 
+
 class MainViewController: UIViewController, MainViewControllerProtocol {
 
     var viewModel = MainViewModel()
