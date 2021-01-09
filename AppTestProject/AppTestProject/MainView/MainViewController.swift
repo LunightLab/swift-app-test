@@ -15,16 +15,17 @@ protocol MainViewControllerProtocol {
     func MainVCconfigure()
 }
 
-class MainViewController: UIViewController, MainViewControllerProtocol {
+class MainViewController: UIViewController, MainViewControllerProtocol, UITextFieldDelegate {
 
     var viewModel = MainViewModel()
     
-    @IBOutlet weak var labTitle: UILabel!
-    @IBOutlet weak var btnNextView: UIButton!
+    @IBOutlet weak var naviTitle: UILabel!   // 네비게이션 Title
+    @IBOutlet weak var btnNextView: UIButton! // swift 테스트 리스트 테이블 뷰 호출
+    @IBOutlet weak var txtFieldLog: UITextView! // logView
+    
     
     @IBOutlet var submitBtn: UIButton!
     @IBOutlet weak var btnShared: UIButton!
-    @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var inputField: UITextField!
     
     // MARK: -
@@ -63,10 +64,23 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
     }
     
     // MARK: -
+    // MARK: Delegate
+    
+    // UITextField Delegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return true
+    }
+    // UIResponder 앱 이벤트처리 클래스
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
+    
+    // MARK: -
     func MainVCconfigure() {
         
         // UITest accessibilityIdentifier 설정
-//        self.resultLabel.accessibilityIdentifier = "result-label"
 //        self.inputField.accessibilityIdentifier = "input-field"
 //        self.submitBtn.accessibilityIdentifier = "submit-button"
 //        self.btnShared.accessibilityIdentifier = "shareBtn"

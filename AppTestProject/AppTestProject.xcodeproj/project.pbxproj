@@ -158,7 +158,6 @@
 		13108F6825871DDB003BFFD5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				B9EBD21925A5754F00BDAC30 /* Network */,
 				13108F322586F409003BFFD5 /* Extensions.swift */,
 				B9411D2F2593183300F9945D /* DeviceInfo.swift */,
 				B92586EE259AB91E008DC9A2 /* AppVersionCheck.swift */,
@@ -368,45 +367,6 @@
 				B9EBD21425A571E700BDAC30 /* NetworkVC.swift */,
 			);
 			path = 5.Network;
-			sourceTree = "<group>";
-		};
-		B9EBD21925A5754F00BDAC30 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				B9EBD21A25A5755800BDAC30 /* EndPoint */,
-				B9EBD21B25A5755F00BDAC30 /* Manager */,
-				B9EBD21C25A5756700BDAC30 /* Service */,
-				B9EBD21D25A5757000BDAC30 /* Encoding */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		B9EBD21A25A5755800BDAC30 /* EndPoint */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EndPoint;
-			sourceTree = "<group>";
-		};
-		B9EBD21B25A5755F00BDAC30 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		B9EBD21C25A5756700BDAC30 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		B9EBD21D25A5757000BDAC30 /* Encoding */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Encoding;
 			sourceTree = "<group>";
 		};
 		FD2B65F60190724C9FEFC07F /* Pods */ = {
