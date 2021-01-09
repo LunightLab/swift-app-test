@@ -14,9 +14,11 @@ protocol MainViewProtocol {
     var btnNextViewNormalName: String? { get }
     var btnNextViewHighlightName: String? { get }
     func moveHandler(completion:@escaping (Bool) -> Swift.Void)
+    
+    
 }
 
-public class MainViewModel: MainViewProtocol {
+public class MainViewModel: MainViewProtocol{
     
     public var title: String {
         return "Sample Test board"
@@ -32,5 +34,6 @@ public class MainViewModel: MainViewProtocol {
         print("\(#function)::success, move sample view")
         completion(true)
     }
+
     
 }

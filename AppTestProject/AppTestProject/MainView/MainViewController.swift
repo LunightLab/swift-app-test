@@ -19,6 +19,7 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
 
     var viewModel = MainViewModel()
     
+    @IBOutlet weak var navibar: UINavigationBar!
     @IBOutlet weak var labTitle: UILabel!
     @IBOutlet weak var btnNextView: UIButton!
     
@@ -94,7 +95,6 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
         // brew install swift gen
         // url : https://github.com/SwiftGen/SwiftGen
         //       https://zeddios.tistory.com/1017?category=682196
-        submitBtn.backgroundColor = Asset.customBlue.color
         
 //        view.backgroundColor = UIColor.systemBackground // ios12이하에서 지원하지 못해 extension 추가.
 //        view.backgroundColor = AssetColor.systemBackground // Extension 참고.
@@ -103,13 +103,19 @@ class MainViewController: UIViewController, MainViewControllerProtocol {
 //        labTitle.text = viewModel.title
 //        labTitle.textColor = viewModel.titleColor
         
+        btnNextView.backgroundColor = Asset.defaultBackground.color
         btnNextView.layer.borderColor = viewModel.titleColor.cgColor
         btnNextView.layer.borderWidth = 2.0
-        
         btnNextView.setTitleColor(viewModel.titleColor, for: .normal)
         btnNextView.setTitleColor(viewModel.titleColor, for: .highlighted)
         btnNextView.setTitle(viewModel.btnNextViewNormalName, for: .normal)
         btnNextView.setTitle(viewModel.btnNextViewHighlightName, for: .highlighted)
+        
+        submitBtn.backgroundColor = Asset.defaultBackground.color
+        submitBtn.layer.borderColor = viewModel.titleColor.cgColor
+        submitBtn.layer.borderWidth = 2.0
+        submitBtn.setTitleColor(viewModel.titleColor, for: .normal)
+        submitBtn.setTitleColor(viewModel.titleColor, for: .highlighted)
         
     }
     
