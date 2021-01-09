@@ -21,7 +21,6 @@ internal typealias AssetColorTypeAlias = ColorAsset.Color
 internal enum Asset {
   internal static let customBlue = ColorAsset(name: "CustomBlue")
   internal static let defaultFont = ColorAsset(name: "DefaultFont")
-  internal static let defaultNavigationBarBackground = ColorAsset(name: "DefaultNavigationBarBackground")
   internal static let defaultTextColor = ColorAsset(name: "DefaultTextColor")
   internal static let toastBG = ColorAsset(name: "ToastBG")
   internal static let toastText = ColorAsset(name: "ToastText")
