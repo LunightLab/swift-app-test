@@ -14,8 +14,7 @@ protocol MainViewProtocol {
     var btnNextViewNormalName: String? { get }
     var btnNextViewHighlightName: String? { get }
     func moveHandler(completion:@escaping (Bool) -> Swift.Void)
-    
-    
+
 }
 
 public class MainViewModel: MainViewProtocol{
@@ -27,6 +26,10 @@ public class MainViewModel: MainViewProtocol{
         return Asset.defaultTextColor.color // Asset.DefaultTextColor.color
     }
     
+    public var fontColor: UIColor {
+        return Asset.defaultTextColor.color
+    }
+    
     var btnNextViewHighlightName: String? = "이동합니다."
     var btnNextViewNormalName: String? = " Swift test list  "
     
@@ -34,6 +37,8 @@ public class MainViewModel: MainViewProtocol{
         print("\(#function)::success, move sample view")
         completion(true)
     }
+
+    
 
     
 }
