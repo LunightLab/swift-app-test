@@ -19,22 +19,39 @@ class MainViewController: UIViewController, MainViewControllerProtocol, UITextFi
 
     var viewModel = MainViewModel()
     
+
     @IBOutlet weak var naviTitle: UILabel!   // 네비게이션 Title
     @IBOutlet weak var btnNextView: UIButton! // swift 테스트 리스트 테이블 뷰 호출
     @IBOutlet weak var txtFieldLog: UITextView! // logView
     
+
     
     @IBOutlet var submitBtn: UIButton!
     @IBOutlet weak var btnShared: UIButton!
     @IBOutlet weak var inputField: UITextField!
+    
+    // lazy closure UILabel
+    lazy var lazyLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        return label
+    }()
     
     // MARK: -
     // MARK: View LiftCycle functions
     override func viewDidLoad() {
 
         super.viewDidLoad()
-//        testOS_LogAndLogger()
+        self.view.addSubview(lazyLabel)
+        // view setting
         MainVCconfigure()
+        
+        //os_log test function
+//        testOS_LogAndLogger()
+        
+        // get device info call function
         getUserInfo()
         
     }
@@ -108,22 +125,22 @@ class MainViewController: UIViewController, MainViewControllerProtocol, UITextFi
         // brew install swift gen
         // url : https://github.com/SwiftGen/SwiftGen
         //       https://zeddios.tistory.com/1017?category=682196
-        submitBtn.backgroundColor = Asset.customBlue.color
         
-//        view.backgroundColor = UIColor.systemBackground // ios12이하에서 지원하지 못해 extension 추가.
-//        view.backgroundColor = AssetColor.systemBackground // Extension 참고.
-        
-        // mvvm design pattern test
-//        labTitle.text = viewModel.title
-//        labTitle.textColor = viewModel.titleColor
-        
+                
+        btnNextView.backgroundColor = Asset.defaultBackground.color
         btnNextView.layer.borderColor = viewModel.titleColor.cgColor
         btnNextView.layer.borderWidth = 2.0
-        
         btnNextView.setTitleColor(viewModel.titleColor, for: .normal)
         btnNextView.setTitleColor(viewModel.titleColor, for: .highlighted)
         btnNextView.setTitle(viewModel.btnNextViewNormalName, for: .normal)
         btnNextView.setTitle(viewModel.btnNextViewHighlightName, for: .highlighted)
+        
+        submitBtn.backgroundColor = Asset.defaultBackground.color
+        submitBtn.layer.borderColor = viewModel.titleColor.cgColor
+        submitBtn.layer.borderWidth = 2.0
+        submitBtn.setTitleColor(viewModel.titleColor, for: .normal)
+        submitBtn.setTitleColor(viewModel.titleColor, for: .highlighted)
+        
         
     }
     
@@ -177,9 +194,11 @@ class MainViewController: UIViewController, MainViewControllerProtocol, UITextFi
     // MARK: -
     
     // 외부 공유하기
+    // MARK: 외부 공유하기
     // url : https://www.swiftdevcenter.com/uiactivityviewcontroller-tutorial-by-example/
+    
     @IBAction func doShare(_ sender: Any){
-        // MARK: 외부 공유하기
+        
         let shareText: String = "share text string"
         var shareObject = [Any]()
         shareObject.append(shareText)
@@ -199,9 +218,6 @@ class MainViewController: UIViewController, MainViewControllerProtocol, UITextFi
                 print("error while sharing: \(shareError.localizedDescription)")
             }
         }
-    }
-    @IBAction func actionLabel(_ sender: Any){
-        print("actionLabel")
     }
     
     @IBAction func showNextView(_ sender: Any) {

@@ -12,10 +12,10 @@
 		13108F532586F93F003BFFD5 /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13108F522586F93F003BFFD5 /* Assets+Generated.swift */; };
 		13108F6A25871DEB003BFFD5 /* TraceLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13108F6925871DEB003BFFD5 /* TraceLog.swift */; };
 		13108FC42587507E003BFFD5 /* lottie-developer.json in Resources */ = {isa = PBXBuildFile; fileRef = 13108FC32587507E003BFFD5 /* lottie-developer.json */; };
+		135E6D5725AB33DA00E87D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 135E6D5525AB33DA00E87D47 /* Main.storyboard */; };
 		137B905A258334BC00300DC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B9059258334BC00300DC5 /* AppDelegate.swift */; };
 		137B905C258334BC00300DC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B905B258334BC00300DC5 /* SceneDelegate.swift */; };
 		137B905E258334BC00300DC5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B905D258334BC00300DC5 /* MainViewController.swift */; };
-		137B9061258334BC00300DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137B905F258334BC00300DC5 /* Main.storyboard */; };
 		137B9063258334BD00300DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137B9062258334BD00300DC5 /* Assets.xcassets */; };
 		137B9066258334BD00300DC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137B9064258334BD00300DC5 /* LaunchScreen.storyboard */; };
 		137B9071258334BD00300DC5 /* AppTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B9070258334BD00300DC5 /* AppTestProjectTests.swift */; };
@@ -24,14 +24,14 @@
 		13938A7C25887749000E2A3B /* LaunchSplashView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13938A7B25887749000E2A3B /* LaunchSplashView.storyboard */; };
 		13938A82258877AA000E2A3B /* LaunchSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13938A81258877AA000E2A3B /* LaunchSplashView.swift */; };
 		13938ABA258898DE000E2A3B /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13938AB9258898DE000E2A3B /* ToastMessage.swift */; };
+		13B1C75225AADF05006EA6B5 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1C75125AADF05006EA6B5 /* AppAppearance.swift */; };
+		13B1C75725AAE214006EA6B5 /* Appconfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1C75625AAE214006EA6B5 /* Appconfigurations.swift */; };
 		2318E486575C4ABB3BCC1F31 /* Pods_AppTestProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C735A18B1057DD46833A403B /* Pods_AppTestProjectTests.framework */; };
 		53312F16AF662E5E6D1A1E4F /* Pods_AppTestProject_AppTestProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338B729C6DD0ABD7AD7DD5B2 /* Pods_AppTestProject_AppTestProjectUITests.framework */; };
 		B913707D25A6CD6400E75D9A /* SupportLanguageCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913707C25A6CD6400E75D9A /* SupportLanguageCode.swift */; };
 		B92586EF259AB91E008DC9A2 /* AppVersionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92586EE259AB91E008DC9A2 /* AppVersionCheck.swift */; };
 		B92586F4259AF67F008DC9A2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92586F3259AF67F008DC9A2 /* Reachability.swift */; };
 		B9411D302593183300F9945D /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9411D2F2593183300F9945D /* DeviceInfo.swift */; };
-		B95A6E342591AD5D00AB985E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137B905F258334BC00300DC5 /* Main.storyboard */; };
-		B95A6E382591AD6000AB985E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137B905F258334BC00300DC5 /* Main.storyboard */; };
 		B96B83AC25A2DDA100ECFB12 /* SimpleMvvmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96B83AB25A2DDA100ECFB12 /* SimpleMvvmVC.swift */; };
 		B96B83B425A2DDB200ECFB12 /* SimpleMvvmVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96B83B325A2DDB200ECFB12 /* SimpleMvvmVM.swift */; };
 		B96B83B925A2DDBF00ECFB12 /* SimpleMvvmM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96B83B825A2DDBF00ECFB12 /* SimpleMvvmM.swift */; };
@@ -70,11 +70,11 @@
 		13108F522586F93F003BFFD5 /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Assets+Generated.swift"; path = "../../Assets+Generated.swift"; sourceTree = "<group>"; };
 		13108F6925871DEB003BFFD5 /* TraceLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceLog.swift; sourceTree = "<group>"; };
 		13108FC32587507E003BFFD5 /* lottie-developer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-developer.json"; sourceTree = "<group>"; };
+		135E6D5625AB33DA00E87D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		137B9056258334BC00300DC5 /* AppTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		137B9059258334BC00300DC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		137B905B258334BC00300DC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		137B905D258334BC00300DC5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		137B9060258334BC00300DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		137B9062258334BD00300DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		137B9065258334BD00300DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		137B9067258334BD00300DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +88,8 @@
 		13938A7B25887749000E2A3B /* LaunchSplashView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchSplashView.storyboard; sourceTree = "<group>"; };
 		13938A81258877AA000E2A3B /* LaunchSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSplashView.swift; sourceTree = "<group>"; };
 		13938AB9258898DE000E2A3B /* ToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
+		13B1C75125AADF05006EA6B5 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
+		13B1C75625AAE214006EA6B5 /* Appconfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appconfigurations.swift; sourceTree = "<group>"; };
 		1D9BEA6191BDC47F02480A34 /* Pods-AppTestProject-AppTestProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProject-AppTestProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-AppTestProject-AppTestProjectUITests/Pods-AppTestProject-AppTestProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		338B729C6DD0ABD7AD7DD5B2 /* Pods_AppTestProject_AppTestProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTestProject_AppTestProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5907F57404DB42C991B016 /* Pods-AppTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProject.debug.xcconfig"; path = "Target Support Files/Pods-AppTestProject/Pods-AppTestProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -276,6 +278,8 @@
 			children = (
 				137B905B258334BC00300DC5 /* SceneDelegate.swift */,
 				137B9059258334BC00300DC5 /* AppDelegate.swift */,
+				13B1C75125AADF05006EA6B5 /* AppAppearance.swift */,
+				13B1C75625AAE214006EA6B5 /* Appconfigurations.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -356,7 +360,7 @@
 		B9AD906A2594574800DFB5B9 /* AppStoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				137B905F258334BC00300DC5 /* Main.storyboard */,
+				135E6D5525AB33DA00E87D47 /* Main.storyboard */,
 			);
 			path = AppStoryBoard;
 			sourceTree = "<group>";
@@ -495,7 +499,7 @@
 				137B9066258334BD00300DC5 /* LaunchScreen.storyboard in Resources */,
 				13108F092586EC00003BFFD5 /* Color.xcassets in Resources */,
 				137B9063258334BD00300DC5 /* Assets.xcassets in Resources */,
-				137B9061258334BC00300DC5 /* Main.storyboard in Resources */,
+				135E6D5725AB33DA00E87D47 /* Main.storyboard in Resources */,
 				13108FC42587507E003BFFD5 /* lottie-developer.json in Resources */,
 				13938A7C25887749000E2A3B /* LaunchSplashView.storyboard in Resources */,
 			);
@@ -505,7 +509,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B95A6E382591AD6000AB985E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +516,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B95A6E342591AD5D00AB985E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +537,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# Build run script \n# Auto increment Version number when Archive\n#if [ $CONFIGURATION == Release ]; then \nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n#fi\n\n# Swift Gen(Color.xcassets)\nswiftgen xcassets ${TARGETNAME}/Resource/Color.xcassets -t swift4 --output \"${TARGETNAME}/Resource/Assets+Generated.swift\"\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# Build run script \n# Auto increment Version number when Archive\n#if [ $CONFIGURATION == Release ]; then \nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n#fi\n\n# Swift Gen(Color.xcassets)\nswiftgen xcassets ${TARGETNAME}/Resource/Color.xcassets -t swift5 --output \"${TARGETNAME}/Resource/Assets+Generated.swift\"\n\n";
 		};
 		44805A85CEAB3B8D19C145DF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -663,6 +665,8 @@
 				B913707D25A6CD6400E75D9A /* SupportLanguageCode.swift in Sources */,
 				B96B83B925A2DDBF00ECFB12 /* SimpleMvvmM.swift in Sources */,
 				137B908A2583452500300DC5 /* Year.swift in Sources */,
+				13B1C75225AADF05006EA6B5 /* AppAppearance.swift in Sources */,
+				13B1C75725AAE214006EA6B5 /* Appconfigurations.swift in Sources */,
 				B9A827092599CA43008258A0 /* TestListViewController.swift in Sources */,
 				13938ABA258898DE000E2A3B /* ToastMessage.swift in Sources */,
 				137B905C258334BC00300DC5 /* SceneDelegate.swift in Sources */,
@@ -703,10 +707,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		137B905F258334BC00300DC5 /* Main.storyboard */ = {
+		135E6D5525AB33DA00E87D47 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				137B9060258334BC00300DC5 /* Base */,
+				135E6D5625AB33DA00E87D47 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
