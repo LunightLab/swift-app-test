@@ -20,6 +20,7 @@ internal typealias AssetColorTypeAlias = ColorAsset.Color
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
   internal static let customBlue = ColorAsset(name: "CustomBlue")
+  internal static let defaultColorBackground = ColorAsset(name: "DefaultColorBackground")
   internal static let defaultFont = ColorAsset(name: "DefaultFont")
   internal static let defaultNavigationBarBackground = ColorAsset(name: "DefaultNavigationBarBackground")
   internal static let defaultTextColor = ColorAsset(name: "DefaultTextColor")
@@ -40,7 +41,12 @@ internal final class ColorAsset {
   #endif
 
   @available(iOS 11.0, tvOS 11.0, watchOS 4.0, macOS 10.13, *)
-  internal private(set) lazy var color: Color = Color(asset: self)
+  internal private(set) lazy var color: Color = {
+    guard let color = Color(asset: self) else {
+      fatalError("Unable to load color asset named \(name).")
+    }
+    return color
+  }()
 
   fileprivate init(name: String) {
     self.name = name
@@ -49,7 +55,7 @@ internal final class ColorAsset {
 
 internal extension ColorAsset.Color {
   @available(iOS 11.0, tvOS 11.0, watchOS 4.0, macOS 10.13, *)
-  convenience init!(asset: ColorAsset) {
+  convenience init?(asset: ColorAsset) {
     let bundle = BundleToken.bundle
     #if os(iOS) || os(tvOS)
     self.init(named: asset.name, in: bundle, compatibleWith: nil)

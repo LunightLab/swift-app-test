@@ -24,6 +24,8 @@ internal enum Asset {
   internal static let defaultTextColor = ColorAsset(name: "DefaultTextColor")
   internal static let toastBG = ColorAsset(name: "ToastBG")
   internal static let toastText = ColorAsset(name: "ToastText")
+    internal static let defaultBackground = ColorAsset(name:"DefaultColorBackground")
+    internal static let navigationBarBackground = ColorAsset(name: "DefaultNavigationBarBackground")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

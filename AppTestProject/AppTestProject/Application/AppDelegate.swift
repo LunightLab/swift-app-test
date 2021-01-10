@@ -8,7 +8,8 @@
 
 import UIKit
 
-@UIApplicationMain
+@UIApplicationMain // The centralized point of control and coordination for apps running in iOS
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -18,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if ProcessInfo.processInfo.arguments.contains("UI-TESTING"){
             // do somting for ui test
         }
+        
+        AppAppearance.setupAppearance()
+        
+        
         return true
     }
 

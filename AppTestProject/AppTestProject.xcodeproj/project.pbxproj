@@ -24,6 +24,8 @@
 		13938A7C25887749000E2A3B /* LaunchSplashView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13938A7B25887749000E2A3B /* LaunchSplashView.storyboard */; };
 		13938A82258877AA000E2A3B /* LaunchSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13938A81258877AA000E2A3B /* LaunchSplashView.swift */; };
 		13938ABA258898DE000E2A3B /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13938AB9258898DE000E2A3B /* ToastMessage.swift */; };
+		13B1C75225AADF05006EA6B5 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1C75125AADF05006EA6B5 /* AppAppearance.swift */; };
+		13B1C75725AAE214006EA6B5 /* Appconfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1C75625AAE214006EA6B5 /* Appconfigurations.swift */; };
 		2318E486575C4ABB3BCC1F31 /* Pods_AppTestProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C735A18B1057DD46833A403B /* Pods_AppTestProjectTests.framework */; };
 		53312F16AF662E5E6D1A1E4F /* Pods_AppTestProject_AppTestProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338B729C6DD0ABD7AD7DD5B2 /* Pods_AppTestProject_AppTestProjectUITests.framework */; };
 		B913707D25A6CD6400E75D9A /* SupportLanguageCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913707C25A6CD6400E75D9A /* SupportLanguageCode.swift */; };
@@ -88,6 +90,8 @@
 		13938A7B25887749000E2A3B /* LaunchSplashView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchSplashView.storyboard; sourceTree = "<group>"; };
 		13938A81258877AA000E2A3B /* LaunchSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSplashView.swift; sourceTree = "<group>"; };
 		13938AB9258898DE000E2A3B /* ToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
+		13B1C75125AADF05006EA6B5 /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
+		13B1C75625AAE214006EA6B5 /* Appconfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appconfigurations.swift; sourceTree = "<group>"; };
 		1D9BEA6191BDC47F02480A34 /* Pods-AppTestProject-AppTestProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProject-AppTestProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-AppTestProject-AppTestProjectUITests/Pods-AppTestProject-AppTestProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		338B729C6DD0ABD7AD7DD5B2 /* Pods_AppTestProject_AppTestProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTestProject_AppTestProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5907F57404DB42C991B016 /* Pods-AppTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTestProject.debug.xcconfig"; path = "Target Support Files/Pods-AppTestProject/Pods-AppTestProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -277,6 +281,8 @@
 			children = (
 				137B905B258334BC00300DC5 /* SceneDelegate.swift */,
 				137B9059258334BC00300DC5 /* AppDelegate.swift */,
+				13B1C75125AADF05006EA6B5 /* AppAppearance.swift */,
+				13B1C75625AAE214006EA6B5 /* Appconfigurations.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -575,7 +581,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# Build run script \n# Auto increment Version number when Archive\n#if [ $CONFIGURATION == Release ]; then \nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n#fi\n\n# Swift Gen(Color.xcassets)\nswiftgen xcassets ${TARGETNAME}/Resource/Color.xcassets -t swift4 --output \"${TARGETNAME}/Resource/Assets+Generated.swift\"\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# Build run script \n# Auto increment Version number when Archive\n#if [ $CONFIGURATION == Release ]; then \nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n#fi\n\n# Swift Gen(Color.xcassets)\nswiftgen xcassets ${TARGETNAME}/Resource/Color.xcassets -t swift5 --output \"${TARGETNAME}/Resource/Assets+Generated.swift\"\n\n";
 		};
 		44805A85CEAB3B8D19C145DF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -703,6 +709,8 @@
 				B913707D25A6CD6400E75D9A /* SupportLanguageCode.swift in Sources */,
 				B96B83B925A2DDBF00ECFB12 /* SimpleMvvmM.swift in Sources */,
 				137B908A2583452500300DC5 /* Year.swift in Sources */,
+				13B1C75225AADF05006EA6B5 /* AppAppearance.swift in Sources */,
+				13B1C75725AAE214006EA6B5 /* Appconfigurations.swift in Sources */,
 				B9A827092599CA43008258A0 /* TestListViewController.swift in Sources */,
 				13938ABA258898DE000E2A3B /* ToastMessage.swift in Sources */,
 				137B905C258334BC00300DC5 /* SceneDelegate.swift in Sources */,
