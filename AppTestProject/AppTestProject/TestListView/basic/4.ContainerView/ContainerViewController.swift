@@ -7,6 +7,7 @@
 //
 // url : https://medium.com/@jang.wangsu/swift-containerview-%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC-ee2ed07ec4e8
 //       https://minominodomino.github.io/devlog/2019/05/19/ios-ContainerViewController/
+//       https://velog.io/@cooo002/iosContainerView-Programmatically
 
 import Foundation
 import UIKit
@@ -63,12 +64,21 @@ class ContainerViewController: UIViewController {
     
     @IBAction func btnChildRemoveAll(_ sender: Any) {
         for vc in children {
-            vc.view.removeFromSuperview()
+            vc.view.removeFromSuperview()   // 제약사항제거
             vc.removeFromParent()
         }
     }
     
     // View Add 추가
-    
+//    @IBAction func btnAddChildController(_ sender: Any) {
+//        
+//        let storyboard = UIStoryboard(name: <#T##String#>, bundle: nil)
+//        let addViewController = storyboard.instantiateViewController(withIdentifier: "")
+//        addViewController.view.translatesAutoresizingMaskIntoConstraints = false
+//        
+//        self.addChild(addViewController)
+//        self.view.addSubview(addViewController.view)
+//        addViewController.didMove(toParent: self)
+//    }
 
 }
