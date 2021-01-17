@@ -106,6 +106,13 @@ extension TestListViewController: UITableViewDelegate, UITableViewDataSource {
                 }
             case 1:
                 ToastMessage.Message(str: "작업중", duration: 2.0)
+            case 3:
+                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerViewController") else {
+                    return
+                }
+                vc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true)
             default:
                 ToastMessage.Message(str: "연결필요", duration: 2.0)
             }
