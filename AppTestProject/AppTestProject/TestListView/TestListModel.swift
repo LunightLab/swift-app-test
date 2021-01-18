@@ -20,7 +20,6 @@ enum NormalTestList: String, CaseIterable{
 }
 let hardTestList:[String] = ["👨🏻‍💻wkwebview - script(💬)",
                              "👨🏻‍💻mvvm-simple",
-                             "👨🏻‍💻mvvm(rxswift)",
                              "👨🏻‍💻Autolayout",
                              "👨🏻‍💻Network"]
 
@@ -28,3 +27,6 @@ let normalTestList:[String] = ["👨🏻‍💻wkwebview - basic(💬)",
                                "👨🏻‍💻enum",
                                "👨🏻‍💻String test",
                                "👨🏻‍💻ContainerView"]
+
+let rxSwiftTestList:[String] = ["👨🏻‍💻basic",
+                                "👨🏻‍💻mvvm(RxSwift ver.)"]

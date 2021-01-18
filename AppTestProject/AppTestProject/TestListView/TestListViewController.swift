@@ -30,7 +30,7 @@ extension TestListViewController: UITableViewDelegate, UITableViewDataSource {
     
     // tableview section count
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -39,6 +39,8 @@ extension TestListViewController: UITableViewDelegate, UITableViewDataSource {
             return "Hard test..💬"
         case 1:
             return "Simple test..💬"
+        case 2:
+            return "RxSwift test..💬"
         default:
             return ""
         }
@@ -48,17 +50,30 @@ extension TestListViewController: UITableViewDelegate, UITableViewDataSource {
         switch section {
         case 0:
             return hardTestList.count
-        default:
+        case 1:
             return normalTestList.count
+        case 2:
+            return rxSwiftTestList.count
+        default:
+            return 3
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "FirstCell", for: indexPath)
-        let text: String = indexPath.section == 0 ? hardTestList[indexPath.row] : normalTestList[indexPath.row]
-        cell.textLabel?.text = text
-//        cell.textLabel?.text = TableList.getTestList(indexPath)
+//        let text: String = indexPath.section == 0 ? hardTestList[indexPath.row] : normalTestList[indexPath.row]
+        switch indexPath.section {
+        case 0:
+            cell.textLabel?.text = hardTestList[indexPath.row]
+        case 1:
+            cell.textLabel?.text = normalTestList[indexPath.row]
+        case 2:
+            cell.textLabel?.text = rxSwiftTestList[indexPath.row]
+        default:
+            return cell
+        }
+//        cell.textLabel?.text = text
         return cell
     }
     
@@ -77,12 +92,10 @@ extension TestListViewController: UITableViewDelegate, UITableViewDataSource {
                 webvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
                 webvc.modalPresentationStyle = .fullScreen
                 self.present(webvc, animated: true)
-            case 2: // MARK: 👨🏻‍💻mvvm(rxswift)
-                ToastMessage.Message(str: "작업중", duration: 2.0)
+            case 2: // MARK: 👨🏻‍💻Autolayout
+                ToastMessage.Message(str: "연결필요", duration: 2.0)
             case 3: // MARK: 👨🏻‍💻Network
-                guard let webvc = self.storyboard?.instantiateViewController(withIdentifier: "NetworkVC") else {
-                    return
-                }
+                ToastMessage.Message(str: "연결필요", duration: 2.0)
             default:
                 ToastMessage.Message(str: "연결필요", duration: 2.0)
             }
@@ -108,6 +121,25 @@ extension TestListViewController: UITableViewDelegate, UITableViewDataSource {
                 ToastMessage.Message(str: "작업중", duration: 2.0)
             case 3:
                 guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerViewController") else {
+                    return
+                }
+                vc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true)
+            default:
+                ToastMessage.Message(str: "연결필요", duration: 2.0)
+            }
+        }else if indexPath.section == 2{
+            switch indexPath.row {
+            case 0:
+                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "RxSimpleViewController") else {
+                    return
+                }
+                vc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true)
+            case 1: // MARK: 👨🏻‍💻mvvm(rxswift)
+                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "RxVC") else {
                     return
                 }
                 vc.modalTransitionStyle = UIModalTransitionStyle.coverVertical

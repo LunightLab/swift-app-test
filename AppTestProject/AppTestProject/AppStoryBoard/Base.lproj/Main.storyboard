@@ -9,6 +9,131 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ebp-QF-qSm">
+            <objects>
+                <viewController id="RuF-2n-EDh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j04-29-smq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmK-1b-ou6">
+                                <rect key="frame" x="186" y="421" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zbh-22-cHC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2z-w9-A1r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-729" y="119"/>
+        </scene>
+        <!--RxVC-->
+        <scene sceneID="chh-iL-0VI">
+            <objects>
+                <viewController storyboardIdentifier="RxVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BdS-RN-M1y" customClass="RxVC" customModule="AppTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tng-FF-teX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RxMvvM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJO-FG-E5T">
+                                <rect key="frame" x="174" y="437.5" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wr-9U-7hJ">
+                                <rect key="frame" x="20" y="517" width="374" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="n5G-YO-usc"/>
+                                </constraints>
+                                <state key="normal" title="test"/>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8c-RM-QUk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="ContainerView sample" id="8JE-CX-FB0">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="6ZS-oM-9Sg">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="QPA-xy-i8Q">
+                                                <rect key="frame" x="20" y="7" width="52" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="돌아가기"/>
+                                                <connections>
+                                                    <action selector="btnBack:" destination="BdS-RN-M1y" eventType="touchUpInside" id="rbY-nX-kV8"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a3n-bW-qD1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a3n-bW-qD1" firstAttribute="trailing" secondItem="9wr-9U-7hJ" secondAttribute="trailing" constant="20" id="Dck-At-vod"/>
+                            <constraint firstItem="GJO-FG-E5T" firstAttribute="centerX" secondItem="tng-FF-teX" secondAttribute="centerX" id="FE1-kK-nfr"/>
+                            <constraint firstItem="y8c-RM-QUk" firstAttribute="trailing" secondItem="a3n-bW-qD1" secondAttribute="trailing" id="HKS-KL-rPy"/>
+                            <constraint firstItem="9wr-9U-7hJ" firstAttribute="top" secondItem="GJO-FG-E5T" secondAttribute="bottom" constant="58.5" id="a25-zW-kbx"/>
+                            <constraint firstItem="GJO-FG-E5T" firstAttribute="centerY" secondItem="tng-FF-teX" secondAttribute="centerY" id="g8S-jA-xQA"/>
+                            <constraint firstItem="9wr-9U-7hJ" firstAttribute="leading" secondItem="a3n-bW-qD1" secondAttribute="leading" constant="20" id="kYk-j0-BRQ"/>
+                            <constraint firstItem="y8c-RM-QUk" firstAttribute="leading" secondItem="a3n-bW-qD1" secondAttribute="leading" id="oyr-wZ-IF8"/>
+                            <constraint firstItem="y8c-RM-QUk" firstAttribute="top" secondItem="a3n-bW-qD1" secondAttribute="top" id="tnt-ez-VRj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="9wr-9U-7hJ" id="oph-RS-trq"/>
+                        <outlet property="lab" destination="GJO-FG-E5T" id="mkZ-AO-U8J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHY-IG-3I8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882.60869565217399" y="805.58035714285711"/>
+        </scene>
+        <!--Rx Simple View Controller-->
+        <scene sceneID="4ca-Cf-H3P">
+            <objects>
+                <viewController storyboardIdentifier="RxSimpleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8UM-Js-ktG" customClass="RxSimpleViewController" customModule="AppTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ILH-EY-M48">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RXSimpleViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHK-PI-TX9">
+                                <rect key="frame" x="114.5" y="437.5" width="185" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fU3-xk-7kV">
+                                <rect key="frame" x="20" y="506" width="374" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="wkc-Kq-2NB"/>
+                                </constraints>
+                                <state key="normal" title="돌아가기"/>
+                                <connections>
+                                    <action selector="btnBack:" destination="8UM-Js-ktG" eventType="touchUpInside" id="1aI-st-lRy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="txG-gK-bNC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fU3-xk-7kV" firstAttribute="top" secondItem="cHK-PI-TX9" secondAttribute="bottom" constant="47.5" id="8oT-Tg-ijL"/>
+                            <constraint firstItem="cHK-PI-TX9" firstAttribute="centerX" secondItem="ILH-EY-M48" secondAttribute="centerX" id="GWo-SL-3X1"/>
+                            <constraint firstItem="cHK-PI-TX9" firstAttribute="centerY" secondItem="ILH-EY-M48" secondAttribute="centerY" id="NEZ-dS-9gW"/>
+                            <constraint firstItem="fU3-xk-7kV" firstAttribute="leading" secondItem="txG-gK-bNC" secondAttribute="leading" constant="20" id="qpc-YS-yz9"/>
+                            <constraint firstItem="txG-gK-bNC" firstAttribute="trailing" secondItem="fU3-xk-7kV" secondAttribute="trailing" constant="20" id="rLW-N3-jBx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kLr-Jm-zEr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200" y="806"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -436,6 +561,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6yS-Ur-5tL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="TAQ-6a-4e7" firstAttribute="centerY" secondItem="P63-5W-yfW" secondAttribute="centerY" id="HBM-R3-n5f"/>
