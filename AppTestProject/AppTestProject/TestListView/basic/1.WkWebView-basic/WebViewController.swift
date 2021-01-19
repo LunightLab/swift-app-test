@@ -110,7 +110,6 @@ class WebViewController: UIViewController, WKUIDelegate, WKScriptMessageHandler 
     public func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
         webView.reload()
     }
-
 }
 
 // searchBar에서 검색하면 입력된 주소로 request
@@ -123,9 +122,26 @@ extension WebViewController: UISearchBarDelegate {
     }
 }
 
-// 현재 웹페이지의 URL을 searchBar에 띄어줌
+// https://developer.apple.com/documentation/webkit/wknavigationdelegate
+// https://ios-development.tistory.com/27
+// MARK: WKNavigationDelegate
 extension WebViewController: WKNavigationDelegate{
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        self.searchBar.text = webView.url?.absoluteString
+    
+    // 콘텐츠 로딩이 실패한 경우
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        
     }
+    // 윕뷰 로드가 완료되면 호출
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        self.searchBar.text = webView.url?.absoluteString // 현재 웹페이지의 URL을 searchBar에 띄어줌
+    }
+    // 웹뷰가 콘텐츠를 로드하기 시작할때 호출되는 메서드(url이 유효하지 않는 경우에도 호출)
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        
+    }
+    // 웹뷰가 HTML 페이지의 콘텐츠를 읽어 들이기 시작할 때 호출 didStartProvisionalNavigation 호출후 바로 호출)
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        
+    }
+
 }
