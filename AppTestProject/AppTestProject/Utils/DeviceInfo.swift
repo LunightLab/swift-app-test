@@ -104,8 +104,8 @@ func getAppName() -> String {
 func getDeviceUniqueCode() -> String{
     let deviceUUID = UIDevice.current.identifierForVendor?.uuid
     let deviceVendorID = UIDevice.current.identifierForVendor?.uuidString ?? "nil"
-    dump(deviceUUID)
-    dump(deviceVendorID)
+//    dump(deviceUUID)
+//    dump(deviceVendorID)
     return deviceVendorID
 }
 

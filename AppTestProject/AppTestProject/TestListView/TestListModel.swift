@@ -26,7 +26,8 @@ let hardTestList:[String] = ["👨🏻‍💻wkwebview - script(💬)",
 let normalTestList:[String] = ["👨🏻‍💻wkwebview - basic(💬)",
                                "👨🏻‍💻enum",
                                "👨🏻‍💻String test",
-                               "👨🏻‍💻ContainerView"]
+                               "👨🏻‍💻ContainerView",
+                               "👨🏻‍💻SwiftKeychainWrapper"]
 
 let rxSwiftTestList:[String] = ["👨🏻‍💻basic",
                                 "👨🏻‍💻mvvm(RxSwift ver.)"]

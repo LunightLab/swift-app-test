@@ -126,6 +126,13 @@ extension TestListViewController: UITableViewDelegate, UITableViewDataSource {
                 vc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true)
+            case 4:
+                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "SwiftKeyChainWrapperViewController") else {
+                    return
+                }
+                vc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true)
             default:
                 ToastMessage.Message(str: "연결필요", duration: 2.0)
             }

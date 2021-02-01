@@ -35,6 +35,7 @@
 		B92586EF259AB91E008DC9A2 /* AppVersionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92586EE259AB91E008DC9A2 /* AppVersionCheck.swift */; };
 		B92586F4259AF67F008DC9A2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92586F3259AF67F008DC9A2 /* Reachability.swift */; };
 		B9411D302593183300F9945D /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9411D2F2593183300F9945D /* DeviceInfo.swift */; };
+		B94E946525C7B79500A0CCA6 /* SwiftKeyChainWrapperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94E946425C7B79500A0CCA6 /* SwiftKeyChainWrapperViewController.swift */; };
 		B96B83AC25A2DDA100ECFB12 /* SimpleMvvmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96B83AB25A2DDA100ECFB12 /* SimpleMvvmVC.swift */; };
 		B96B83B425A2DDB200ECFB12 /* SimpleMvvmVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96B83B325A2DDB200ECFB12 /* SimpleMvvmVM.swift */; };
 		B96B83B925A2DDBF00ECFB12 /* SimpleMvvmM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96B83B825A2DDBF00ECFB12 /* SimpleMvvmM.swift */; };
@@ -54,6 +55,7 @@
 		B9AF25A825B5A95E00A5705F /* RxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AF25A725B5A95E00A5705F /* RxVC.swift */; };
 		B9AF25AD25B5A96700A5705F /* RxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AF25AC25B5A96700A5705F /* RxViewModel.swift */; };
 		B9AF25B225B5A96D00A5705F /* RxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AF25B125B5A96D00A5705F /* RxModel.swift */; };
+		B9C4F65425C7B5ED008D8ADF /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B9C4F65325C7B5ED008D8ADF /* SwiftKeychainWrapper */; };
 		B9EBD21525A571E700BDAC30 /* NetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD21425A571E700BDAC30 /* NetworkVC.swift */; };
 		D1C378A25C8BB4566B28F8B6 /* Pods_AppTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658DFB979BE4F8BFB82A1784 /* Pods_AppTestProject.framework */; };
 /* End PBXBuildFile section */
@@ -115,6 +117,8 @@
 		B92586EE259AB91E008DC9A2 /* AppVersionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionCheck.swift; sourceTree = "<group>"; };
 		B92586F3259AF67F008DC9A2 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		B9411D2F2593183300F9945D /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		B94E946425C7B79500A0CCA6 /* SwiftKeyChainWrapperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftKeyChainWrapperViewController.swift; sourceTree = "<group>"; };
+		B94E947E25C7C4C400A0CCA6 /* AppTestProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppTestProject.entitlements; sourceTree = "<group>"; };
 		B96B83AB25A2DDA100ECFB12 /* SimpleMvvmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMvvmVC.swift; sourceTree = "<group>"; };
 		B96B83B325A2DDB200ECFB12 /* SimpleMvvmVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMvvmVM.swift; sourceTree = "<group>"; };
 		B96B83B825A2DDBF00ECFB12 /* SimpleMvvmM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMvvmM.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 				B9AF258325B56C8D00A5705F /* RxCocoa in Frameworks */,
 				B9AF258125B56C8D00A5705F /* RxRelay in Frameworks */,
 				D1C378A25C8BB4566B28F8B6 /* Pods_AppTestProject.framework in Frameworks */,
+				B9C4F65425C7B5ED008D8ADF /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +230,7 @@
 		137B9058258334BC00300DC5 /* AppTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				B94E947E25C7C4C400A0CCA6 /* AppTestProject.entitlements */,
 				B9AD906A2594574800DFB5B9 /* AppStoryBoard */,
 				B96B839B25A2D37300ECFB12 /* Application */,
 				13108F042586EBBD003BFFD5 /* Resource */,
@@ -305,6 +311,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B94E946325C7B76E00A0CCA6 /* 5.SwiftKeyChainWrapperViewController.SwiftKeyChainWapper */ = {
+			isa = PBXGroup;
+			children = (
+				B94E946425C7B79500A0CCA6 /* SwiftKeyChainWrapperViewController.swift */,
+			);
+			path = 5.SwiftKeyChainWrapperViewController.SwiftKeyChainWapper;
+			sourceTree = "<group>";
+		};
 		B96B839B25A2D37300ECFB12 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +335,7 @@
 			children = (
 				B9A826F42599BE82008258A0 /* 1.WkWebView-basic */,
 				13E2AD1B25B41C4700FBE773 /* 4.ContainerView */,
+				B94E946325C7B76E00A0CCA6 /* 5.SwiftKeyChainWrapperViewController.SwiftKeyChainWapper */,
 			);
 			path = basic;
 			sourceTree = "<group>";
@@ -463,6 +478,7 @@
 				B9AF258025B56C8D00A5705F /* RxRelay */,
 				B9AF258225B56C8D00A5705F /* RxCocoa */,
 				B9AF258425B56C8D00A5705F /* RxBlocking */,
+				B9C4F65325C7B5ED008D8ADF /* SwiftKeychainWrapper */,
 			);
 			productName = AppTestProject;
 			productReference = 137B9056258334BC00300DC5 /* AppTestProject.app */;
@@ -541,6 +557,7 @@
 			mainGroup = 137B904D258334BC00300DC5;
 			packageReferences = (
 				B9AF257D25B56C8D00A5705F /* XCRemoteSwiftPackageReference "RxSwift" */,
+				B9C4F65225C7B5ED008D8ADF /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 			);
 			productRefGroup = 137B9057258334BC00300DC5 /* Products */;
 			projectDirPath = "";
@@ -737,6 +754,7 @@
 				13B1C75725AAE214006EA6B5 /* Appconfigurations.swift in Sources */,
 				B9A827092599CA43008258A0 /* TestListViewController.swift in Sources */,
 				13E2AD2B25B4212600FBE773 /* TopViewController.swift in Sources */,
+				B94E946525C7B79500A0CCA6 /* SwiftKeyChainWrapperViewController.swift in Sources */,
 				13938ABA258898DE000E2A3B /* ToastMessage.swift in Sources */,
 				137B905C258334BC00300DC5 /* SceneDelegate.swift in Sources */,
 				B9411D302593183300F9945D /* DeviceInfo.swift in Sources */,
@@ -916,6 +934,7 @@
 			baseConfigurationReference = 4B5907F57404DB42C991B016 /* Pods-AppTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppTestProject/AppTestProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CVVH3QC5W;
 				INFOPLIST_FILE = AppTestProject/Info.plist;
@@ -935,6 +954,7 @@
 			baseConfigurationReference = 84ECBBD4303B454E0E447453 /* Pods-AppTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppTestProject/AppTestProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CVVH3QC5W;
 				INFOPLIST_FILE = AppTestProject/Info.plist;
@@ -1087,6 +1107,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		B9C4F65225C7B5ED008D8ADF /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1109,6 +1137,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B9AF257D25B56C8D00A5705F /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxBlocking;
+		};
+		B9C4F65325C7B5ED008D8ADF /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9C4F65225C7B5ED008D8ADF /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
