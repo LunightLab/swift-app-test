@@ -9,22 +9,22 @@
 import UIKit
 import Lottie
 import OSLog
+import OpenSSL
+
 
 protocol MainViewControllerProtocol {
     var viewModel: MainViewModel { get set }
     func MainVCconfigure()
 }
 
+
 class MainViewController: UIViewController, MainViewControllerProtocol, UITextFieldDelegate {
 
     var viewModel = MainViewModel()
     
-
     @IBOutlet weak var naviTitle: UILabel!   // 네비게이션 Title
     @IBOutlet weak var btnNextView: UIButton! // swift 테스트 리스트 테이블 뷰 호출
     @IBOutlet weak var txtFieldLog: UITextView! // logView
-    
-
     
     @IBOutlet var submitBtn: UIButton!
     @IBOutlet weak var btnShared: UIButton!
@@ -53,6 +53,7 @@ class MainViewController: UIViewController, MainViewControllerProtocol, UITextFi
         
         // get device info call function
         getUserInfo()
+        
         
     }
     

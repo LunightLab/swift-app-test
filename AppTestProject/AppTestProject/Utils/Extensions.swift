@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import os.log
-
 typealias AssetColor = Asset
 
 extension AssetColor {
@@ -23,7 +22,6 @@ extension AssetColor {
 
 extension OSLog {
     private static var subsystem = Bundle.main.bundleIdentifier!
-    
     /// Logs the view cycles like viewDidLoad.
     static let viewCycle = OSLog(subsystem: subsystem, category: "📱viewCycle")
     static let setting = OSLog(subsystem: subsystem, category: "💬setting")
