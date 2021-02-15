@@ -28,9 +28,9 @@ class WebViewConfiguration: WKWebViewConfiguration, WKScriptMessageHandler {
     
     func webviewConfigurationSetup() {
         
-        if #available(iOS 13.0, *) {
-            self.defaultWebpagePreferences.preferredContentMode = .mobile
-        }
+//        if #available(iOS 13.0, *) {
+//            self.defaultWebpagePreferences.preferredContentMode = .mobile
+//        }
         
         // HTML5 미디어 활성화
         self.allowsInlineMediaPlayback = true

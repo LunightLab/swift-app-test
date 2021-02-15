@@ -9,7 +9,6 @@
 import UIKit
 import Lottie
 import OSLog
-import OpenSSL
 
 
 protocol MainViewControllerProtocol {

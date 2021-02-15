@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (5.4.1)
-  - lottie-ios (3.1.9)
+  - lottie-ios (3.2.1)
   - SwiftGen (6.4.0)
   - Toaster (2.3.0)
 
@@ -19,10 +19,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
-  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
+  lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
 PODFILE CHECKSUM: 185b8c2393f2af3ad44f5a879d0637ff59ca17ae
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.0
