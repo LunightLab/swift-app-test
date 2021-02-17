@@ -54,6 +54,8 @@ class MainViewController: UIViewController, MainViewControllerProtocol, UITextFi
         getUserInfo()
         
         
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

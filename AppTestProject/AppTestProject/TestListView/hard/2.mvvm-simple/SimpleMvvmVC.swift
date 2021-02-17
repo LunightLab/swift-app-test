@@ -9,13 +9,13 @@
 import UIKit
 import OSLog
 
-protocol SimpleMvvmVCProtocol {
-    
-    var viewModel: SimpleMvvmVM { get set }
-
-}
-
-class SimpleMvvmVC: UIViewController, SimpleMvvmVCProtocol {
+//protocol SimpleMvvmVCProtocol {
+//
+//    var viewModel: SimpleMvvmVM { get set }
+//
+//}
+ 
+class SimpleMvvmVC: UIViewController {
     
     var viewModel = SimpleMvvmVM()
     
