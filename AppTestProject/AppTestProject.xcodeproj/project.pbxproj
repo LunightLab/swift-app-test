@@ -127,7 +127,6 @@
 		B9411D2F2593183300F9945D /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		B94E946425C7B79500A0CCA6 /* SwiftKeyChainWrapperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftKeyChainWrapperViewController.swift; sourceTree = "<group>"; };
 		B94E947E25C7C4C400A0CCA6 /* AppTestProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppTestProject.entitlements; sourceTree = "<group>"; };
-		B968D0F725CA7F5000935391 /* OpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenSSL.framework; sourceTree = "<group>"; };
 		B96B83AB25A2DDA100ECFB12 /* SimpleMvvmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMvvmVC.swift; sourceTree = "<group>"; };
 		B96B83B325A2DDB200ECFB12 /* SimpleMvvmVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMvvmVM.swift; sourceTree = "<group>"; };
 		B96B83B825A2DDBF00ECFB12 /* SimpleMvvmM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMvvmM.swift; sourceTree = "<group>"; };
@@ -245,7 +244,6 @@
 		137B9058258334BC00300DC5 /* AppTestProject */ = {
 			isa = PBXGroup;
 			children = (
-				B968D0F525CA7F1C00935391 /* Frameworks */,
 				B94E947E25C7C4C400A0CCA6 /* AppTestProject.entitlements */,
 				B9AD906A2594574800DFB5B9 /* AppStoryBoard */,
 				B96B839B25A2D37300ECFB12 /* Application */,
@@ -344,22 +342,6 @@
 				B94E946425C7B79500A0CCA6 /* SwiftKeyChainWrapperViewController.swift */,
 			);
 			path = 5.SwiftKeyChainWrapperViewController.SwiftKeyChainWapper;
-			sourceTree = "<group>";
-		};
-		B968D0F525CA7F1C00935391 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B968D0F625CA7F5000935391 /* OpenSSL */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		B968D0F625CA7F5000935391 /* OpenSSL */ = {
-			isa = PBXGroup;
-			children = (
-				B968D0F725CA7F5000935391 /* OpenSSL.framework */,
-			);
-			path = OpenSSL;
 			sourceTree = "<group>";
 		};
 		B968D0FC25CA802700935391 /* library */ = {
