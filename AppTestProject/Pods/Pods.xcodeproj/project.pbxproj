@@ -15,7 +15,6 @@
 			dependencies = (
 			);
 			name = SwiftGen;
-			productName = SwiftGen;
 		};
 /* End PBXAggregateTarget section */
 
@@ -310,7 +309,7 @@
 		1089A01088208C71943958256EF698B4 /* AnimationTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationTime.swift; path = "lottie-swift/src/Public/Primitives/AnimationTime.swift"; sourceTree = "<group>"; };
 		112A59EB7DAAEA2FF8D75C33A9608D94 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		12549E497A6B372B9AE34BFDC8F59D42 /* KeyframeExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyframeExtensions.swift; path = "lottie-swift/src/Private/Utility/Interpolatable/KeyframeExtensions.swift"; sourceTree = "<group>"; };
-		142AF2C27273ADD522731EFD3A56778A /* Pods_AppTestProject_AppTestProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTestProject_AppTestProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		142AF2C27273ADD522731EFD3A56778A /* Pods_AppTestProject_AppTestProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AppTestProject_AppTestProjectUITests.framework; path = "Pods-AppTestProject-AppTestProjectUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1450EA16D5709EE0FF629DE292FBC45A /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = "lottie-swift/src/Private/Model/ShapeItems/Shape.swift"; sourceTree = "<group>"; };
 		146ECFC461D3A8101726C76870E1B031 /* Pods-AppTestProjectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppTestProjectTests-dummy.m"; sourceTree = "<group>"; };
 		1700850BDE93CD43A547F531E27957B5 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
@@ -361,7 +360,7 @@
 		50D4CE1F862A3FFF271CDD2A169A4CEE /* AnimationPublic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationPublic.swift; path = "lottie-swift/src/Public/Animation/AnimationPublic.swift"; sourceTree = "<group>"; };
 		50DD335E035DB6F886103A274FC0DD09 /* Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Font.swift; path = "lottie-swift/src/Private/Model/Text/Font.swift"; sourceTree = "<group>"; };
 		50E8047879C5D9A2919706785C369D7E /* ToastCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastCenter.swift; path = Sources/ToastCenter.swift; sourceTree = "<group>"; };
-		51BA97E8B5085EFFB47BC9C0B785CEA7 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BA97E8B5085EFFB47BC9C0B785CEA7 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Lottie.framework; path = "lottie-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5235FF14B3389755E09F869556F836DB /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
 		523BB386AE78C8469A479DA4F9812EA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		530895666688DAA22E629C8B512247F1 /* Keyframe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keyframe.swift; path = "lottie-swift/src/Private/Model/Keyframes/Keyframe.swift"; sourceTree = "<group>"; };
@@ -380,7 +379,7 @@
 		5CD17372AAFCD499770F00D27DF63561 /* BezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BezierPath.swift; path = "lottie-swift/src/Private/Utility/Primitives/BezierPath.swift"; sourceTree = "<group>"; };
 		5CF057F3263FF9B0F1369168EA3517D8 /* SolidLayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SolidLayerModel.swift; path = "lottie-swift/src/Private/Model/Layers/SolidLayerModel.swift"; sourceTree = "<group>"; };
 		5D4198178948AE7784130229D6C4A4C0 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = "lottie-swift/src/Public/Primitives/Color.swift"; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8BE39003DDF0694BBC2C14A2384B8C /* Pods-AppTestProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppTestProject.modulemap"; sourceTree = "<group>"; };
 		5DB0B4E98B4FA7F5A948582BCC101FD5 /* TextAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextAnimator.swift; path = "lottie-swift/src/Private/Model/Text/TextAnimator.swift"; sourceTree = "<group>"; };
 		5E844FCF035FF45404BACB0798E5C9CD /* LayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerModel.swift; path = "lottie-swift/src/Private/Model/Layers/LayerModel.swift"; sourceTree = "<group>"; };
@@ -422,7 +421,7 @@
 		8D8DA249A6A9A37F7CA0E6D6BCBF9011 /* Pods-AppTestProjectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppTestProjectTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8F9C47702F2A707CA4112391DA50C77B /* ToastWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastWindow.swift; path = Sources/ToastWindow.swift; sourceTree = "<group>"; };
 		8FAB4A265ED5A81533D981F1148537BA /* lottie-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "lottie-ios-dummy.m"; sourceTree = "<group>"; };
-		90B84B1BED56C09B46DDF15D29EFF37F /* Pods_AppTestProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTestProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B84B1BED56C09B46DDF15D29EFF37F /* Pods_AppTestProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AppTestProjectTests.framework; path = "Pods-AppTestProjectTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B4647AE42238A0670F26C69377FAE8 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		9313B2BD551F1EB56D94D40AF7026CC1 /* ShapeItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeItem.swift; path = "lottie-swift/src/Private/Model/ShapeItems/ShapeItem.swift"; sourceTree = "<group>"; };
 		94C501214C7D91707588BAC10EBA2536 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
@@ -432,7 +431,7 @@
 		97B2A0A3420C53A4F21174E625A397AA /* Pods-AppTestProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppTestProject-umbrella.h"; sourceTree = "<group>"; };
 		9C8FBDAC877155862FA0C0E88E997251 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		9CCB266738C9EA929A31C2B05342C5BE /* MaskContainerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskContainerLayer.swift; path = "lottie-swift/src/Private/LayerContainers/CompLayers/MaskContainerLayer.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DB3346D2FF6BFC35BDBB489EF77836E /* RenderNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Protocols/RenderNode.swift"; sourceTree = "<group>"; };
 		9FFBD662502038EC1E3A1163DF741237 /* StarNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/PathNodes/StarNode.swift"; sourceTree = "<group>"; };
 		A07CB11BE7091D6A8B2A6C4CAE7295ED /* AnimatorNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatorNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Protocols/AnimatorNode.swift"; sourceTree = "<group>"; };
@@ -444,7 +443,7 @@
 		A69506796FC7F923D783CD54E4F1F5E0 /* InterpolatableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpolatableExtensions.swift; path = "lottie-swift/src/Private/Utility/Interpolatable/InterpolatableExtensions.swift"; sourceTree = "<group>"; };
 		A6DD1791EFB6204EDE7A0EB9A6A93C43 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
 		A7BC35934D4EB4C64384DD79341A316F /* BundleImageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BundleImageProvider.swift; path = "lottie-swift/src/Public/iOS/BundleImageProvider.swift"; sourceTree = "<group>"; };
-		A83EB8B3F4EDDEB33DBF91B912F07718 /* Pods_AppTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A83EB8B3F4EDDEB33DBF91B912F07718 /* Pods_AppTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AppTestProject.framework; path = "Pods-AppTestProject.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85816A95E26E214C3E8385856341647 /* Glyph.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Glyph.swift; path = "lottie-swift/src/Private/Model/Text/Glyph.swift"; sourceTree = "<group>"; };
 		A96780717B4F0A04C90EAD38701D89C2 /* SolidCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SolidCompositionLayer.swift; path = "lottie-swift/src/Private/LayerContainers/CompLayers/SolidCompositionLayer.swift"; sourceTree = "<group>"; };
 		A9CADD3E8EBD460A608B71B780529EBB /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
@@ -460,7 +459,7 @@
 		B6C288600E741BD6C302BFB18ED79371 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
 		B75BEBF1C3531E26212E261DC260E4F9 /* ImageCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCompositionLayer.swift; path = "lottie-swift/src/Private/LayerContainers/CompLayers/ImageCompositionLayer.swift"; sourceTree = "<group>"; };
 		B7AC9CD7E50E497B8C76F19014C3C0E9 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
-		BD810337F4A305D60D9250A197AA1EF1 /* Toaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD810337F4A305D60D9250A197AA1EF1 /* Toaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toaster.framework; path = Toaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4C77DE8F262F168EB23BBBDECD4EDB /* AnimationViewInitializers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationViewInitializers.swift; path = "lottie-swift/src/Public/Animation/AnimationViewInitializers.swift"; sourceTree = "<group>"; };
 		C27E6BF7FB41B63D1197DAFF1D8A3652 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = "lottie-swift/src/Private/Model/Animation.swift"; sourceTree = "<group>"; };
 		C2832C427F755C07F8C1ED115A96F2D2 /* Toaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toaster.release.xcconfig; sourceTree = "<group>"; };
@@ -742,6 +741,7 @@
 				C88891533D8B32173D2CD452F1C2AC3E /* VectorsExtensions.swift */,
 				D40321C3F807B761DE7ACD5D69C46AC4 /* Support Files */,
 			);
+			name = "lottie-ios";
 			path = "lottie-ios";
 			sourceTree = "<group>";
 		};
@@ -836,6 +836,7 @@
 			children = (
 				725DFA254D04FD09A095FE128A101CD5 /* Support Files */,
 			);
+			name = SwiftGen;
 			path = SwiftGen;
 			sourceTree = "<group>";
 		};
@@ -870,6 +871,7 @@
 				DA47DC1B41DD2C79C373B561811E7242 /* UIApplication+Load.swift */,
 				45CF2263EEE469326062AC9CA2A3B421 /* Support Files */,
 			);
+			name = Toaster;
 			path = Toaster;
 			sourceTree = "<group>";
 		};
@@ -924,6 +926,7 @@
 				112A59EB7DAAEA2FF8D75C33A9608D94 /* Validation.swift */,
 				63BCE4F1AD387D34C22438DDC93B5A92 /* Support Files */,
 			);
+			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1131,7 +1134,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 11.0";
@@ -1535,7 +1538,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Toaster/Toaster-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Toaster/Toaster-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1598,7 +1601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1624,7 +1627,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1762,7 +1765,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/lottie-ios/lottie-ios-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1896,7 +1899,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1931,7 +1934,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/lottie-ios/lottie-ios-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1966,7 +1969,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Toaster/Toaster-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Toaster/Toaster-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2066,7 +2069,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

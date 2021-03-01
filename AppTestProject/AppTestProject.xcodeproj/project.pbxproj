@@ -21,6 +21,12 @@
 		137B9071258334BD00300DC5 /* AppTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B9070258334BD00300DC5 /* AppTestProjectTests.swift */; };
 		137B907C258334BD00300DC5 /* AppTestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B907B258334BD00300DC5 /* AppTestProjectUITests.swift */; };
 		137B908A2583452500300DC5 /* Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B90892583452500300DC5 /* Year.swift */; };
+		138FE34425ED3AC800625878 /* ServiceLocatorTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FE34325ED3AC800625878 /* ServiceLocatorTestVC.swift */; };
+		138FE35025ED3B4000625878 /* S1Impl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FE34C25ED3B4000625878 /* S1Impl.swift */; };
+		138FE35125ED3B4000625878 /* S2Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FE34D25ED3B4000625878 /* S2Service.swift */; };
+		138FE35225ED3B4000625878 /* S1Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FE34E25ED3B4000625878 /* S1Service.swift */; };
+		138FE35325ED3B4000625878 /* S2Impl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FE34F25ED3B4000625878 /* S2Impl.swift */; };
+		138FE35825ED3B5800625878 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FE35725ED3B5800625878 /* DataRepository.swift */; };
 		13938A7C25887749000E2A3B /* LaunchSplashView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13938A7B25887749000E2A3B /* LaunchSplashView.storyboard */; };
 		13938A82258877AA000E2A3B /* LaunchSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13938A81258877AA000E2A3B /* LaunchSplashView.swift */; };
 		13938ABA258898DE000E2A3B /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13938AB9258898DE000E2A3B /* ToastMessage.swift */; };
@@ -102,6 +108,12 @@
 		137B907B258334BD00300DC5 /* AppTestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTestProjectUITests.swift; sourceTree = "<group>"; };
 		137B907D258334BD00300DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		137B90892583452500300DC5 /* Year.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Year.swift; sourceTree = "<group>"; };
+		138FE34325ED3AC800625878 /* ServiceLocatorTestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocatorTestVC.swift; sourceTree = "<group>"; };
+		138FE34C25ED3B4000625878 /* S1Impl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = S1Impl.swift; path = ../../../../../../../../../Desktop/Data/S1Impl.swift; sourceTree = "<group>"; };
+		138FE34D25ED3B4000625878 /* S2Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = S2Service.swift; path = ../../../../../../../../../Desktop/Data/S2Service.swift; sourceTree = "<group>"; };
+		138FE34E25ED3B4000625878 /* S1Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = S1Service.swift; path = ../../../../../../../../../Desktop/Data/S1Service.swift; sourceTree = "<group>"; };
+		138FE34F25ED3B4000625878 /* S2Impl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = S2Impl.swift; path = ../../../../../../../../../Desktop/Data/S2Impl.swift; sourceTree = "<group>"; };
+		138FE35725ED3B5800625878 /* DataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		13938A7B25887749000E2A3B /* LaunchSplashView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchSplashView.storyboard; sourceTree = "<group>"; };
 		13938A81258877AA000E2A3B /* LaunchSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSplashView.swift; sourceTree = "<group>"; };
 		13938AB9258898DE000E2A3B /* ToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
@@ -277,6 +289,49 @@
 			path = AppTestProjectUITests;
 			sourceTree = "<group>";
 		};
+		138FE32A25ED38F700625878 /* 1.WKWebView-script */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "1.WKWebView-script";
+			sourceTree = "<group>";
+		};
+		138FE32B25ED393E00625878 /* 3.DownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 3.DownloadManager;
+			sourceTree = "<group>";
+		};
+		138FE32C25ED396500625878 /* 4.ServiceLocator */ = {
+			isa = PBXGroup;
+			children = (
+				138FE34825ED3AF500625878 /* Data */,
+				138FE34B25ED3B2E00625878 /* Repository */,
+				138FE34325ED3AC800625878 /* ServiceLocatorTestVC.swift */,
+			);
+			path = 4.ServiceLocator;
+			sourceTree = "<group>";
+		};
+		138FE34825ED3AF500625878 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				138FE34C25ED3B4000625878 /* S1Impl.swift */,
+				138FE34E25ED3B4000625878 /* S1Service.swift */,
+				138FE34F25ED3B4000625878 /* S2Impl.swift */,
+				138FE34D25ED3B4000625878 /* S2Service.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		138FE34B25ED3B2E00625878 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				138FE35725ED3B5800625878 /* DataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		13938A802588774E000E2A3B /* SplashView */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,19 +430,13 @@
 		B96B83A025A2DCBB00ECFB12 /* hard */ = {
 			isa = PBXGroup;
 			children = (
-				B96B83A425A2DCF100ECFB12 /* 1.WkWebView-script */,
+				138FE32A25ED38F700625878 /* 1.WKWebView-script */,
 				B96B83A825A2DD3A00ECFB12 /* 2.mvvm-simple */,
-				B96B83AA25A2DD8000ECFB12 /* 3.DownloadManager */,
+				138FE32B25ED393E00625878 /* 3.DownloadManager */,
+				138FE32C25ED396500625878 /* 4.ServiceLocator */,
 				B9EBD21025A5712200BDAC30 /* 5.Network */,
 			);
 			path = hard;
-			sourceTree = "<group>";
-		};
-		B96B83A425A2DCF100ECFB12 /* 1.WkWebView-script */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "1.WkWebView-script";
 			sourceTree = "<group>";
 		};
 		B96B83A825A2DD3A00ECFB12 /* 2.mvvm-simple */ = {
@@ -408,13 +457,6 @@
 				B9AF25B125B5A96D00A5705F /* RxModel.swift */,
 			);
 			path = "2.mvvm-rxswift";
-			sourceTree = "<group>";
-		};
-		B96B83AA25A2DD8000ECFB12 /* 3.DownloadManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 3.DownloadManager;
 			sourceTree = "<group>";
 		};
 		B9A826F42599BE82008258A0 /* 1.WkWebView-basic */ = {
@@ -779,7 +821,9 @@
 				B9A827032599BF29008258A0 /* WebModel.swift in Sources */,
 				13108F332586F409003BFFD5 /* Extensions.swift in Sources */,
 				B9DFC9A425D26E7E00DB5C50 /* WebViewConfiguration.swift in Sources */,
+				138FE35125ED3B4000625878 /* S2Service.swift in Sources */,
 				13E2AD1D25B41C6500FBE773 /* ContainerViewController.swift in Sources */,
+				138FE35825ED3B5800625878 /* DataRepository.swift in Sources */,
 				B9EBD21525A571E700BDAC30 /* NetworkVC.swift in Sources */,
 				13E2AD2625B420E800FBE773 /* BottomViewController.swift in Sources */,
 				B96B83AC25A2DDA100ECFB12 /* SimpleMvvmVC.swift in Sources */,
@@ -790,13 +834,16 @@
 				13108F532586F93F003BFFD5 /* Assets+Generated.swift in Sources */,
 				137B905A258334BC00300DC5 /* AppDelegate.swift in Sources */,
 				B9A826F62599BEDE008258A0 /* WebViewController.swift in Sources */,
+				138FE34425ED3AC800625878 /* ServiceLocatorTestVC.swift in Sources */,
 				B9A8270E2599CA52008258A0 /* TestListViewModel.swift in Sources */,
 				B9AF25B225B5A96D00A5705F /* RxModel.swift in Sources */,
 				B913707D25A6CD6400E75D9A /* SupportLanguageCode.swift in Sources */,
 				B96B83B925A2DDBF00ECFB12 /* SimpleMvvmM.swift in Sources */,
 				137B908A2583452500300DC5 /* Year.swift in Sources */,
 				B9BD14EF25DA084E0046E843 /* HttpDownload.swift in Sources */,
+				138FE35025ED3B4000625878 /* S1Impl.swift in Sources */,
 				13B1C75225AADF05006EA6B5 /* AppAppearance.swift in Sources */,
+				138FE35325ED3B4000625878 /* S2Impl.swift in Sources */,
 				13B1C75725AAE214006EA6B5 /* Appconfigurations.swift in Sources */,
 				B9A827092599CA43008258A0 /* TestListViewController.swift in Sources */,
 				13E2AD2B25B4212600FBE773 /* TopViewController.swift in Sources */,
@@ -806,6 +853,7 @@
 				137B905C258334BC00300DC5 /* SceneDelegate.swift in Sources */,
 				B9411D302593183300F9945D /* DeviceInfo.swift in Sources */,
 				B92586EF259AB91E008DC9A2 /* AppVersionCheck.swift in Sources */,
+				138FE35225ED3B4000625878 /* S1Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
