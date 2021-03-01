@@ -49,6 +49,7 @@ class LaunchSplashView: UIViewController {
         let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController")
         firstVC.modalPresentationStyle = .fullScreen
         present(firstVC, animated: true, completion:  nil)
+    
     }
     
      

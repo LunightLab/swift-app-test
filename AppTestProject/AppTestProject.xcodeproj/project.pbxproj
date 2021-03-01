@@ -56,6 +56,8 @@
 		B9AF25A825B5A95E00A5705F /* RxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AF25A725B5A95E00A5705F /* RxVC.swift */; };
 		B9AF25AD25B5A96700A5705F /* RxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AF25AC25B5A96700A5705F /* RxViewModel.swift */; };
 		B9AF25B225B5A96D00A5705F /* RxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AF25B125B5A96D00A5705F /* RxModel.swift */; };
+		B9BD14EE25DA084E0046E843 /* HttpDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD14EC25DA084D0046E843 /* HttpDownloadManager.swift */; };
+		B9BD14EF25DA084E0046E843 /* HttpDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD14ED25DA084D0046E843 /* HttpDownload.swift */; };
 		B9C4F65425C7B5ED008D8ADF /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = B9C4F65325C7B5ED008D8ADF /* SwiftKeychainWrapper */; };
 		B9DFC9A425D26E7E00DB5C50 /* WebViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DFC9A325D26E7E00DB5C50 /* WebViewConfiguration.swift */; };
 		B9EBD21525A571E700BDAC30 /* NetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EBD21425A571E700BDAC30 /* NetworkVC.swift */; };
@@ -141,6 +143,8 @@
 		B9AF25A725B5A95E00A5705F /* RxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVC.swift; sourceTree = "<group>"; };
 		B9AF25AC25B5A96700A5705F /* RxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewModel.swift; sourceTree = "<group>"; };
 		B9AF25B125B5A96D00A5705F /* RxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxModel.swift; sourceTree = "<group>"; };
+		B9BD14EC25DA084D0046E843 /* HttpDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpDownloadManager.swift; sourceTree = "<group>"; };
+		B9BD14ED25DA084D0046E843 /* HttpDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpDownload.swift; sourceTree = "<group>"; };
 		B9DFC9A325D26E7E00DB5C50 /* WebViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewConfiguration.swift; sourceTree = "<group>"; };
 		B9EBD21425A571E700BDAC30 /* NetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkVC.swift; sourceTree = "<group>"; };
 		C735A18B1057DD46833A403B /* Pods_AppTestProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTestProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +199,7 @@
 		13108F6825871DDB003BFFD5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B9BD14EB25DA08390046E843 /* DownloadManager */,
 				B968D0FC25CA802700935391 /* library */,
 				B93F822025C8D9F400047218 /* ObjC */,
 				13108F322586F409003BFFD5 /* Extensions.swift */,
@@ -390,7 +395,7 @@
 			children = (
 				B96B83A425A2DCF100ECFB12 /* 1.WkWebView-script */,
 				B96B83A825A2DD3A00ECFB12 /* 2.mvvm-simple */,
-				B96B83AA25A2DD8000ECFB12 /* 4.AutoLayout */,
+				B96B83AA25A2DD8000ECFB12 /* 3.DownloadManager */,
 				B9EBD21025A5712200BDAC30 /* 5.Network */,
 			);
 			path = hard;
@@ -423,11 +428,11 @@
 			path = "2.mvvm-rxswift";
 			sourceTree = "<group>";
 		};
-		B96B83AA25A2DD8000ECFB12 /* 4.AutoLayout */ = {
+		B96B83AA25A2DD8000ECFB12 /* 3.DownloadManager */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = 4.AutoLayout;
+			path = 3.DownloadManager;
 			sourceTree = "<group>";
 		};
 		B9A826F42599BE82008258A0 /* 1.WkWebView-basic */ = {
@@ -477,6 +482,15 @@
 				B9AF258D25B59EE200A5705F /* RxSimpleViewController.swift */,
 			);
 			path = 1.basic;
+			sourceTree = "<group>";
+		};
+		B9BD14EB25DA08390046E843 /* DownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				B9BD14ED25DA084D0046E843 /* HttpDownload.swift */,
+				B9BD14EC25DA084D0046E843 /* HttpDownloadManager.swift */,
+			);
+			path = DownloadManager;
 			sourceTree = "<group>";
 		};
 		B9EBD21025A5712200BDAC30 /* 5.Network */ = {
@@ -799,12 +813,14 @@
 				B913707D25A6CD6400E75D9A /* SupportLanguageCode.swift in Sources */,
 				B96B83B925A2DDBF00ECFB12 /* SimpleMvvmM.swift in Sources */,
 				137B908A2583452500300DC5 /* Year.swift in Sources */,
+				B9BD14EF25DA084E0046E843 /* HttpDownload.swift in Sources */,
 				13B1C75225AADF05006EA6B5 /* AppAppearance.swift in Sources */,
 				13B1C75725AAE214006EA6B5 /* Appconfigurations.swift in Sources */,
 				B9A827092599CA43008258A0 /* TestListViewController.swift in Sources */,
 				13E2AD2B25B4212600FBE773 /* TopViewController.swift in Sources */,
 				B94E946525C7B79500A0CCA6 /* SwiftKeyChainWrapperViewController.swift in Sources */,
 				13938ABA258898DE000E2A3B /* ToastMessage.swift in Sources */,
+				B9BD14EE25DA084E0046E843 /* HttpDownloadManager.swift in Sources */,
 				137B905C258334BC00300DC5 /* SceneDelegate.swift in Sources */,
 				B9411D302593183300F9945D /* DeviceInfo.swift in Sources */,
 				B92586EF259AB91E008DC9A2 /* AppVersionCheck.swift in Sources */,
