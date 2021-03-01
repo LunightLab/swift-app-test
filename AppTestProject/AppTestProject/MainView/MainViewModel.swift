@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import OpenSSL
 
 protocol MainViewProtocol {
     var title:String { get }
