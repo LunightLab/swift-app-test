@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+        // Service Locateor
+        let globalLocalUseCase: LocalUseCase
+        
+        
         if ProcessInfo.processInfo.arguments.contains("UI-TESTING"){
             // do somting for ui test
         }

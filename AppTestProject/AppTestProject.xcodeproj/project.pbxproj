@@ -21,12 +21,7 @@
 		137B9071258334BD00300DC5 /* AppTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B9070258334BD00300DC5 /* AppTestProjectTests.swift */; };
 		137B907C258334BD00300DC5 /* AppTestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B907B258334BD00300DC5 /* AppTestProjectUITests.swift */; };
 		137B908A2583452500300DC5 /* Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B90892583452500300DC5 /* Year.swift */; };
-		138FE34425ED3AC800625878 /* ServiceLocatorTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FE34325ED3AC800625878 /* ServiceLocatorTestVC.swift */; };
-		138FE35025ED3B4000625878 /* S1Impl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FE34C25ED3B4000625878 /* S1Impl.swift */; };
-		138FE35125ED3B4000625878 /* S2Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FE34D25ED3B4000625878 /* S2Service.swift */; };
-		138FE35225ED3B4000625878 /* S1Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FE34E25ED3B4000625878 /* S1Service.swift */; };
-		138FE35325ED3B4000625878 /* S2Impl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FE34F25ED3B4000625878 /* S2Impl.swift */; };
-		138FE35825ED3B5800625878 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FE35725ED3B5800625878 /* DataRepository.swift */; };
+		138FE34425ED3AC800625878 /* MvvMCleanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138FE34325ED3AC800625878 /* MvvMCleanVC.swift */; };
 		13938A7C25887749000E2A3B /* LaunchSplashView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13938A7B25887749000E2A3B /* LaunchSplashView.storyboard */; };
 		13938A82258877AA000E2A3B /* LaunchSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13938A81258877AA000E2A3B /* LaunchSplashView.swift */; };
 		13938ABA258898DE000E2A3B /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13938AB9258898DE000E2A3B /* ToastMessage.swift */; };
@@ -46,6 +41,14 @@
 		B96B83AC25A2DDA100ECFB12 /* SimpleMvvmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96B83AB25A2DDA100ECFB12 /* SimpleMvvmVC.swift */; };
 		B96B83B425A2DDB200ECFB12 /* SimpleMvvmVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96B83B325A2DDB200ECFB12 /* SimpleMvvmVM.swift */; };
 		B96B83B925A2DDBF00ECFB12 /* SimpleMvvmM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96B83B825A2DDBF00ECFB12 /* SimpleMvvmM.swift */; };
+		B97D81CC25EDBD7300E688A0 /* AppDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D81CB25EDBD7300E688A0 /* AppDataService.swift */; };
+		B97D81D425EDBD8300E688A0 /* MemDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D81D325EDBD8300E688A0 /* MemDataService.swift */; };
+		B97D81D925EDBD9600E688A0 /* PreferenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D81D825EDBD9600E688A0 /* PreferenceService.swift */; };
+		B97D81DE25EDBEBA00E688A0 /* LocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D81DD25EDBEBA00E688A0 /* LocalRepository.swift */; };
+		B97D81ED25EDD43400E688A0 /* basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D81EC25EDD43400E688A0 /* basic.swift */; };
+		B97D81F825EE0F8400E688A0 /* LocalUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D81F725EE0F8300E688A0 /* LocalUseCase.swift */; };
+		B97D823A25EE47C800E688A0 /* MvvMCleanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D823925EE47C800E688A0 /* MvvMCleanViewModel.swift */; };
+		B97D824325EE48F500E688A0 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D824225EE48F500E688A0 /* UseCase.swift */; };
 		B9A826F62599BEDE008258A0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A826F52599BEDE008258A0 /* WebViewController.swift */; };
 		B9A826FE2599BF20008258A0 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A826FD2599BF20008258A0 /* WebViewModel.swift */; };
 		B9A827032599BF29008258A0 /* WebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A827022599BF29008258A0 /* WebModel.swift */; };
@@ -108,12 +111,7 @@
 		137B907B258334BD00300DC5 /* AppTestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTestProjectUITests.swift; sourceTree = "<group>"; };
 		137B907D258334BD00300DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		137B90892583452500300DC5 /* Year.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Year.swift; sourceTree = "<group>"; };
-		138FE34325ED3AC800625878 /* ServiceLocatorTestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocatorTestVC.swift; sourceTree = "<group>"; };
-		138FE34C25ED3B4000625878 /* S1Impl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = S1Impl.swift; path = ../../../../../../../../../Desktop/Data/S1Impl.swift; sourceTree = "<group>"; };
-		138FE34D25ED3B4000625878 /* S2Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = S2Service.swift; path = ../../../../../../../../../Desktop/Data/S2Service.swift; sourceTree = "<group>"; };
-		138FE34E25ED3B4000625878 /* S1Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = S1Service.swift; path = ../../../../../../../../../Desktop/Data/S1Service.swift; sourceTree = "<group>"; };
-		138FE34F25ED3B4000625878 /* S2Impl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = S2Impl.swift; path = ../../../../../../../../../Desktop/Data/S2Impl.swift; sourceTree = "<group>"; };
-		138FE35725ED3B5800625878 /* DataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		138FE34325ED3AC800625878 /* MvvMCleanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MvvMCleanVC.swift; sourceTree = "<group>"; };
 		13938A7B25887749000E2A3B /* LaunchSplashView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchSplashView.storyboard; sourceTree = "<group>"; };
 		13938A81258877AA000E2A3B /* LaunchSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSplashView.swift; sourceTree = "<group>"; };
 		13938AB9258898DE000E2A3B /* ToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
@@ -142,6 +140,14 @@
 		B96B83AB25A2DDA100ECFB12 /* SimpleMvvmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMvvmVC.swift; sourceTree = "<group>"; };
 		B96B83B325A2DDB200ECFB12 /* SimpleMvvmVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMvvmVM.swift; sourceTree = "<group>"; };
 		B96B83B825A2DDBF00ECFB12 /* SimpleMvvmM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMvvmM.swift; sourceTree = "<group>"; };
+		B97D81CB25EDBD7300E688A0 /* AppDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataService.swift; sourceTree = "<group>"; };
+		B97D81D325EDBD8300E688A0 /* MemDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemDataService.swift; sourceTree = "<group>"; };
+		B97D81D825EDBD9600E688A0 /* PreferenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceService.swift; sourceTree = "<group>"; };
+		B97D81DD25EDBEBA00E688A0 /* LocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRepository.swift; sourceTree = "<group>"; };
+		B97D81EC25EDD43400E688A0 /* basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basic.swift; sourceTree = "<group>"; };
+		B97D81F725EE0F8300E688A0 /* LocalUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUseCase.swift; sourceTree = "<group>"; };
+		B97D823925EE47C800E688A0 /* MvvMCleanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MvvMCleanViewModel.swift; sourceTree = "<group>"; };
+		B97D824225EE48F500E688A0 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		B9A826F52599BEDE008258A0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B9A826FD2599BF20008258A0 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		B9A827022599BF29008258A0 /* WebModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebModel.swift; sourceTree = "<group>"; };
@@ -303,33 +309,18 @@
 			path = 3.DownloadManager;
 			sourceTree = "<group>";
 		};
-		138FE32C25ED396500625878 /* 4.ServiceLocator */ = {
+		138FE32C25ED396500625878 /* 4.Mvvm-CleanArchitecture */ = {
 			isa = PBXGroup;
 			children = (
-				138FE34825ED3AF500625878 /* Data */,
-				138FE34B25ED3B2E00625878 /* Repository */,
-				138FE34325ED3AC800625878 /* ServiceLocatorTestVC.swift */,
+				B97D824125EE48DE00E688A0 /* testmodel */,
+				B97D81EC25EDD43400E688A0 /* basic.swift */,
+				B97D81C625EDBD1A00E688A0 /* Data */,
+				B97D822A25EE223300E688A0 /* Repository */,
+				B97D81F625EE0F7200E688A0 /* UseCase */,
+				138FE34325ED3AC800625878 /* MvvMCleanVC.swift */,
+				B97D823925EE47C800E688A0 /* MvvMCleanViewModel.swift */,
 			);
-			path = 4.ServiceLocator;
-			sourceTree = "<group>";
-		};
-		138FE34825ED3AF500625878 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				138FE34C25ED3B4000625878 /* S1Impl.swift */,
-				138FE34E25ED3B4000625878 /* S1Service.swift */,
-				138FE34F25ED3B4000625878 /* S2Impl.swift */,
-				138FE34D25ED3B4000625878 /* S2Service.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		138FE34B25ED3B2E00625878 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				138FE35725ED3B5800625878 /* DataRepository.swift */,
-			);
-			path = Repository;
+			path = "4.Mvvm-CleanArchitecture";
 			sourceTree = "<group>";
 		};
 		13938A802588774E000E2A3B /* SplashView */ = {
@@ -433,7 +424,7 @@
 				138FE32A25ED38F700625878 /* 1.WKWebView-script */,
 				B96B83A825A2DD3A00ECFB12 /* 2.mvvm-simple */,
 				138FE32B25ED393E00625878 /* 3.DownloadManager */,
-				138FE32C25ED396500625878 /* 4.ServiceLocator */,
+				138FE32C25ED396500625878 /* 4.Mvvm-CleanArchitecture */,
 				B9EBD21025A5712200BDAC30 /* 5.Network */,
 			);
 			path = hard;
@@ -457,6 +448,72 @@
 				B9AF25B125B5A96D00A5705F /* RxModel.swift */,
 			);
 			path = "2.mvvm-rxswift";
+			sourceTree = "<group>";
+		};
+		B97D81C625EDBD1A00E688A0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B97D81C725EDBD3500E688A0 /* local */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B97D81C725EDBD3500E688A0 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				B97D81CA25EDBD5400E688A0 /* appdata */,
+				B97D81C925EDBD4D00E688A0 /* memdata */,
+				B97D81C825EDBD3E00E688A0 /* preference */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		B97D81C825EDBD3E00E688A0 /* preference */ = {
+			isa = PBXGroup;
+			children = (
+				B97D81D825EDBD9600E688A0 /* PreferenceService.swift */,
+			);
+			path = preference;
+			sourceTree = "<group>";
+		};
+		B97D81C925EDBD4D00E688A0 /* memdata */ = {
+			isa = PBXGroup;
+			children = (
+				B97D81D325EDBD8300E688A0 /* MemDataService.swift */,
+			);
+			path = memdata;
+			sourceTree = "<group>";
+		};
+		B97D81CA25EDBD5400E688A0 /* appdata */ = {
+			isa = PBXGroup;
+			children = (
+				B97D81CB25EDBD7300E688A0 /* AppDataService.swift */,
+			);
+			path = appdata;
+			sourceTree = "<group>";
+		};
+		B97D81F625EE0F7200E688A0 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				B97D81F725EE0F8300E688A0 /* LocalUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B97D822A25EE223300E688A0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B97D81DD25EDBEBA00E688A0 /* LocalRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B97D824125EE48DE00E688A0 /* testmodel */ = {
+			isa = PBXGroup;
+			children = (
+				B97D824225EE48F500E688A0 /* UseCase.swift */,
+			);
+			path = testmodel;
 			sourceTree = "<group>";
 		};
 		B9A826F42599BE82008258A0 /* 1.WkWebView-basic */ = {
@@ -813,6 +870,7 @@
 				B93F823025C8EA3F00047218 /* SHA2.m in Sources */,
 				B96B83B425A2DDB200ECFB12 /* SimpleMvvmVM.swift in Sources */,
 				B9A826FE2599BF20008258A0 /* WebViewModel.swift in Sources */,
+				B97D81ED25EDD43400E688A0 /* basic.swift in Sources */,
 				B9AF25AD25B5A96700A5705F /* RxViewModel.swift in Sources */,
 				B9AF25A825B5A95E00A5705F /* RxVC.swift in Sources */,
 				13108F6A25871DEB003BFFD5 /* TraceLog.swift in Sources */,
@@ -821,12 +879,12 @@
 				B9A827032599BF29008258A0 /* WebModel.swift in Sources */,
 				13108F332586F409003BFFD5 /* Extensions.swift in Sources */,
 				B9DFC9A425D26E7E00DB5C50 /* WebViewConfiguration.swift in Sources */,
-				138FE35125ED3B4000625878 /* S2Service.swift in Sources */,
 				13E2AD1D25B41C6500FBE773 /* ContainerViewController.swift in Sources */,
-				138FE35825ED3B5800625878 /* DataRepository.swift in Sources */,
 				B9EBD21525A571E700BDAC30 /* NetworkVC.swift in Sources */,
 				13E2AD2625B420E800FBE773 /* BottomViewController.swift in Sources */,
+				B97D81F825EE0F8400E688A0 /* LocalUseCase.swift in Sources */,
 				B96B83AC25A2DDA100ECFB12 /* SimpleMvvmVC.swift in Sources */,
+				B97D81D925EDBD9600E688A0 /* PreferenceService.swift in Sources */,
 				B9AF258E25B59EE200A5705F /* RxSimpleViewController.swift in Sources */,
 				B9AD90632594516300DFB5B9 /* MainViewModel.swift in Sources */,
 				13938A82258877AA000E2A3B /* LaunchSplashView.swift in Sources */,
@@ -834,26 +892,28 @@
 				13108F532586F93F003BFFD5 /* Assets+Generated.swift in Sources */,
 				137B905A258334BC00300DC5 /* AppDelegate.swift in Sources */,
 				B9A826F62599BEDE008258A0 /* WebViewController.swift in Sources */,
-				138FE34425ED3AC800625878 /* ServiceLocatorTestVC.swift in Sources */,
+				138FE34425ED3AC800625878 /* MvvMCleanVC.swift in Sources */,
 				B9A8270E2599CA52008258A0 /* TestListViewModel.swift in Sources */,
 				B9AF25B225B5A96D00A5705F /* RxModel.swift in Sources */,
 				B913707D25A6CD6400E75D9A /* SupportLanguageCode.swift in Sources */,
 				B96B83B925A2DDBF00ECFB12 /* SimpleMvvmM.swift in Sources */,
 				137B908A2583452500300DC5 /* Year.swift in Sources */,
 				B9BD14EF25DA084E0046E843 /* HttpDownload.swift in Sources */,
-				138FE35025ED3B4000625878 /* S1Impl.swift in Sources */,
 				13B1C75225AADF05006EA6B5 /* AppAppearance.swift in Sources */,
-				138FE35325ED3B4000625878 /* S2Impl.swift in Sources */,
 				13B1C75725AAE214006EA6B5 /* Appconfigurations.swift in Sources */,
+				B97D823A25EE47C800E688A0 /* MvvMCleanViewModel.swift in Sources */,
 				B9A827092599CA43008258A0 /* TestListViewController.swift in Sources */,
 				13E2AD2B25B4212600FBE773 /* TopViewController.swift in Sources */,
+				B97D81DE25EDBEBA00E688A0 /* LocalRepository.swift in Sources */,
 				B94E946525C7B79500A0CCA6 /* SwiftKeyChainWrapperViewController.swift in Sources */,
+				B97D81D425EDBD8300E688A0 /* MemDataService.swift in Sources */,
+				B97D824325EE48F500E688A0 /* UseCase.swift in Sources */,
 				13938ABA258898DE000E2A3B /* ToastMessage.swift in Sources */,
 				B9BD14EE25DA084E0046E843 /* HttpDownloadManager.swift in Sources */,
+				B97D81CC25EDBD7300E688A0 /* AppDataService.swift in Sources */,
 				137B905C258334BC00300DC5 /* SceneDelegate.swift in Sources */,
 				B9411D302593183300F9945D /* DeviceInfo.swift in Sources */,
 				B92586EF259AB91E008DC9A2 /* AppVersionCheck.swift in Sources */,
-				138FE35225ED3B4000625878 /* S1Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
