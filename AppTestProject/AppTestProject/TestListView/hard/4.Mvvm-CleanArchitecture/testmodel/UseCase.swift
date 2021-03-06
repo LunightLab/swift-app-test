@@ -15,7 +15,7 @@ final class UserDefaultsInfoQueriesStore {
     private let mainBundle = Bundle.main
     
     init(userDefaults: UserDefaults = UserDefaults.standard) {
-        self.maxStoreLiminit = maxStoreLimit
+        
         self.userDefaults = userDefaults
     }
     

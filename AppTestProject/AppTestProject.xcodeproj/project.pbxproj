@@ -12,6 +12,7 @@
 		13108F532586F93F003BFFD5 /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13108F522586F93F003BFFD5 /* Assets+Generated.swift */; };
 		13108F6A25871DEB003BFFD5 /* TraceLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13108F6925871DEB003BFFD5 /* TraceLog.swift */; };
 		13108FC42587507E003BFFD5 /* lottie-developer.json in Resources */ = {isa = PBXBuildFile; fileRef = 13108FC32587507E003BFFD5 /* lottie-developer.json */; };
+		13210B2F25F3E0F900BA33DC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13210B2E25F3E0F900BA33DC /* NetworkService.swift */; };
 		135E6D5725AB33DA00E87D47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 135E6D5525AB33DA00E87D47 /* Main.storyboard */; };
 		137B905A258334BC00300DC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B9059258334BC00300DC5 /* AppDelegate.swift */; };
 		137B905C258334BC00300DC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B905B258334BC00300DC5 /* SceneDelegate.swift */; };
@@ -96,6 +97,7 @@
 		13108F522586F93F003BFFD5 /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Assets+Generated.swift"; path = "../../Assets+Generated.swift"; sourceTree = "<group>"; };
 		13108F6925871DEB003BFFD5 /* TraceLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceLog.swift; sourceTree = "<group>"; };
 		13108FC32587507E003BFFD5 /* lottie-developer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-developer.json"; sourceTree = "<group>"; };
+		13210B2E25F3E0F900BA33DC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		135E6D5625AB33DA00E87D47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		137B9056258334BC00300DC5 /* AppTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		137B9059258334BC00300DC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -578,6 +580,7 @@
 			isa = PBXGroup;
 			children = (
 				B9EBD21425A571E700BDAC30 /* NetworkVC.swift */,
+				13210B2E25F3E0F900BA33DC /* NetworkService.swift */,
 			);
 			path = 5.Network;
 			sourceTree = "<group>";
@@ -877,6 +880,7 @@
 				B92586F4259AF67F008DC9A2 /* Reachability.swift in Sources */,
 				B9A827132599CA5E008258A0 /* TestListModel.swift in Sources */,
 				B9A827032599BF29008258A0 /* WebModel.swift in Sources */,
+				13210B2F25F3E0F900BA33DC /* NetworkService.swift in Sources */,
 				13108F332586F409003BFFD5 /* Extensions.swift in Sources */,
 				B9DFC9A425D26E7E00DB5C50 /* WebViewConfiguration.swift in Sources */,
 				13E2AD1D25B41C6500FBE773 /* ContainerViewController.swift in Sources */,
