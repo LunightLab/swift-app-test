@@ -143,5 +143,38 @@ extension WebViewController: WKNavigationDelegate{
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         
     }
+    
+    // 해당 url로 이동할지 말지를 결정
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        
+        guard let url = navigationAction.request.url else {
+            decisionHandler(.cancel)    // 이동취소
+            return
+        }
+        
+        let urlString = url.absoluteString
+        if urlString.contains("특정url"){
+            decisionHandler(.cancel)    // 이동취소
+            return
+        }else if urlString.contains("특정url") {
+            // other process
+            decisionHandler(.allow) // url 이동
+        }
+        
+    }
+    
+    // url에 대한 응답값을 받은 뒤 이동할지를 결정한다.
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+        
+        guard let _ = navigationResponse.response.url?.absoluteString else {
+            decisionHandler(.cancel)
+            return
+        }
+        decisionHandler(.allow)
+    }
 
+    // webview alert 띄우기
+    func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+        
+    }
 }
