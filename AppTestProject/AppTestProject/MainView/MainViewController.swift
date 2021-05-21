@@ -9,7 +9,7 @@
 import UIKit
 import Lottie
 import OSLog
-
+import LocalAuthentication
 
 protocol MainViewControllerProtocol {
     var viewModel: MainViewModel { get set }
@@ -52,6 +52,10 @@ class MainViewController: UIViewController, MainViewControllerProtocol, UITextFi
         
         // get device info call function
         getUserInfo()
+        let authContext = LAContext()
+        authContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "인증해야지") { (success, error) in
+            print("인증결과", success, error)
+        }
         
         
         

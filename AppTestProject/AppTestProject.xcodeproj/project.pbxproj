@@ -50,6 +50,7 @@
 		B97D81F825EE0F8400E688A0 /* LocalUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D81F725EE0F8300E688A0 /* LocalUseCase.swift */; };
 		B97D823A25EE47C800E688A0 /* MvvMCleanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D823925EE47C800E688A0 /* MvvMCleanViewModel.swift */; };
 		B97D824325EE48F500E688A0 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D824225EE48F500E688A0 /* UseCase.swift */; };
+		B9988E8E2657ABD600826609 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9988E8D2657ABD600826609 /* LocalAuthentication.framework */; };
 		B9A826F62599BEDE008258A0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A826F52599BEDE008258A0 /* WebViewController.swift */; };
 		B9A826FE2599BF20008258A0 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A826FD2599BF20008258A0 /* WebViewModel.swift */; };
 		B9A827032599BF29008258A0 /* WebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A827022599BF29008258A0 /* WebModel.swift */; };
@@ -150,6 +151,7 @@
 		B97D81F725EE0F8300E688A0 /* LocalUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUseCase.swift; sourceTree = "<group>"; };
 		B97D823925EE47C800E688A0 /* MvvMCleanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MvvMCleanViewModel.swift; sourceTree = "<group>"; };
 		B97D824225EE48F500E688A0 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		B9988E8D2657ABD600826609 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		B9A826F52599BEDE008258A0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B9A826FD2599BF20008258A0 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		B9A827022599BF29008258A0 /* WebModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebModel.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9988E8E2657ABD600826609 /* LocalAuthentication.framework in Frameworks */,
 				B9AF257F25B56C8D00A5705F /* RxSwift in Frameworks */,
 				B9AF258525B56C8D00A5705F /* RxBlocking in Frameworks */,
 				B9A82718259A0127008258A0 /* WebKit.framework in Frameworks */,
@@ -365,6 +368,7 @@
 		79A10BE275906C6BEB0010C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B9988E8D2657ABD600826609 /* LocalAuthentication.framework */,
 				B9A82717259A0127008258A0 /* WebKit.framework */,
 				658DFB979BE4F8BFB82A1784 /* Pods_AppTestProject.framework */,
 				338B729C6DD0ABD7AD7DD5B2 /* Pods_AppTestProject_AppTestProjectUITests.framework */,
